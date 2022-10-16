@@ -1,0 +1,26 @@
+.md_n_text{
+    margin: 10px;
+    position: static;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.md_n_text:hover{
+    border: 1px solid rgb(90, 92, 4);
+    border-radius:12px;
+    color:#fdc50f;
+    font-family: 'Playball'
+    }
+.md_n_text:hover:nth-child(1){
+    color :rgb(247, 65, 65)    
+}
+.md_n_text:hover:nth-child(6){
+    color : white   
+}
+
+.md_n_text:nth-child(6){
+    border-radius:12px;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(251,161,40,0,42);
+}
+
+
