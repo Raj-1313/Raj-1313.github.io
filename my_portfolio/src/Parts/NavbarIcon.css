@@ -2,6 +2,7 @@
     margin: 10px;
     position: static;
     padding: 10px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .md_n_text:hover{

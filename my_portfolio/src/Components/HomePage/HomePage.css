@@ -1,34 +1,20 @@
-.i-name > :nth-child(1) {
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: left;
-    margin-bottom: -20px ;
-  }
+.i-name{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
   .i-name > :nth-child(2){
-    /* color:#fdc50f; */
-    color: #fb982f;
-    font-weight: bold;
-  
+     font-weight: bold;  
   }
-  .yellowText1{
-    color: #fb982f;
- width:auto
+  .i-name > :nth-child(2):hover{
+   content: 'INDIAN';    
+   color: brown; 
   }
-  .i-name > :nth-child(3) {
-    font-weight: 100;
-    font-size: 14px;
-    margin-top: 30px;
-    line-height: 20px;
-    height: 20px;
+
+  .i-name > :nth-child(3) {     color: rgb(161, 160, 153);   }
+    .i-name > :nth-child(4) {
+      font-weight: 100;     
+      margin-top: 30px;
+        }
     
-  }
-
-
-    .i-right:nth-child(2){
-        /* border: #fb982f 1px solid; */
-        position: absolute;
-            right: 9vw;
-            z-index: 2;
-           
-          
-    }
