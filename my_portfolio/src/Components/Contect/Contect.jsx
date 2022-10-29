@@ -3,7 +3,7 @@ import React from 'react'
 
 const Contect = () => {
   return (
-    <Box id='contect' h='100vh'>
+    <Box id='contect' >
       
     </Box>
   )

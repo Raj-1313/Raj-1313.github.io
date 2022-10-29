@@ -106,7 +106,7 @@ export default function Home() {
           />
           <MenuList>
             {data.map((ele) => (
-              <NavbarIcons props={{ url: ele.url, title: ele.title }} />
+              <NavbarIcons props={{ url: ele.url, title: ele.title , id : ele.id}} />
             ))}
           </MenuList>
         </Menu>

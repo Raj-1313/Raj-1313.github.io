@@ -1,0 +1,68 @@
+/* .about-me{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-sizing: border-box;
+} */
+
+
+/* .about-me div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    margin: 10px;
+} */
+
+
+
+.title tr th{
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(173, 173, 173);
+    margin: 5px;
+    text-align: left;
+}
+
+.title tr td{
+    
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgb(228, 228, 228);
+    text-align: right;
+    margin: 25px;
+}
+
+.name{
+    font-family: 800;
+    letter-spacing: 3px;
+    color: coral;
+}
+
+.about-title{
+    font-size: 2.5rem;
+    margin-left: -40px;
+}
+
+
+.about-image{
+    width: 300px;
+}
+
+.details{
+    margin: 10px 25px;
+}
+
+.resume{
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: rgb(80, 80, 80);
+}
+
+.link{
+    margin-top: 40px;
+}

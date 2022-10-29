@@ -1,9 +1,13 @@
-
-import { Box, Grid } from '@chakra-ui/react'
-import React from 'react'
+import { Box } from '@chakra-ui/react';
+import {  VerticalTimeline,  VerticalTimelineElement,} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import "./Project.css"
+import { ReactIcon } from 'react-webtech-animated-icons';
 import ProjectCard from './ProjectCard';
 const Projects = () => {
+
+  let linearColor =
+  'linear-gradient( to bottom, #331992, #3326a2, #3233b3, #2e3fc4, #274bd5, #165cdf, #026ce8, #007cef, #008ee9, #009ad6, #00a3be, #30a8a8 )';
 
 const project = [{
 
@@ -44,33 +48,49 @@ const project = [{
   gitlink: 'https://github.com/Raj-1313/Raj-1313--slow-argument-2201/tree/main/my-app',
   deploy: 'https://my-app-nu-indol.vercel.app',
   month:"1 month",
-},{
-
-  id:2,
-  imageUrl: 'https://media.istockphoto.com/photos/sunset-in-a-rear-view-mirror-picture-id487091534?k=20&m=487091534&s=612x612&w=0&h=K4F_4wqgIgA8gMGxY91eaTnELmrD_u_5zJ70NNRp_2Q=',
-  imageAlt: 'Zoom Car',
-  techStack: ['','','','','' ],
-  About: '',
-  Title: 'ZOOM CAR',
-  time: 'Completed in 5 Days',
-  projectType: 'Group',
-  gitlink: '',
-  deploy: '',
 }
 ]
-  return (
-    <Box id='project'  h='100vh'>    
-    
-      <Grid templateColumns='repeat(3,1fr)' gap='20px' >
-      {
-project.map((el)=> { 
-   return   <ProjectCard  key={el.id} data={el}  />
-  }
-  )
-}
-   </Grid>     
-    </Box>
-  )
+ 
+return (
+  <Box  id='project'>
+  <VerticalTimeline  lineColor={linearColor} className="vertical-line">
+    {project.map((project) => {
+      return (
+        <VerticalTimelineElement
+          key={project.id}
+          className="vertical-timeline-element--project"
+          contentStyle={{
+            background: 'white',
+            color: '#fff',
+            borderRadius: 15,
+            boxShadow:
+              '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+          }}
+          contentArrowStyle={{
+            borderRight: '7px solid  transparent',
+          }}
+      
+          iconStyle={{
+            background: '',
+            color: 'white',
+            backgroundColor: 'rgb(97, 218, 251)',
+          }}
+          icon={
+            <ReactIcon
+              firstColor="#026ce8"
+              secondColor="#8ED6FB"
+              duration={2}
+            />
+          }
+        >
+          <ProjectCard project={project} />
+        </VerticalTimelineElement>
+      );
+    })}
+  </VerticalTimeline>
+  </Box>
+);
+  
 }
 
 export default Projects

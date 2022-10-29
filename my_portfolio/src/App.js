@@ -6,7 +6,7 @@ import About from "./Components/AboutMe/About"
 import Contect from "./Components/Contect/Contect"
 import Skills from "./Components/Skills/Skills"
 import Project from "./Components/Projects/Projects"
-import { Box, Flex, Grid, Hide } from '@chakra-ui/react';
+import { Box,  Grid } from '@chakra-ui/react';
 
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="App" >
-      <Grid  templateColumns="15% 83%"
-      gap="2%"
+      <Grid  templateColumns={{sm:'0 100%',md:"15% 83%"}}
+      gap={{lg:'2%',md:"7%"}}
       >
 
         <Box>
@@ -25,9 +25,9 @@ function App() {
         <Box   className='container'>
       <HomePage/>
       <About/>
-      <Skills/>
+     <Skills/>
       <Project/> 
-    <Contect/> 
+    <Contect/>  
         </Box>
     </Grid>
           </div>
