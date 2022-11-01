@@ -4,6 +4,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import "./Project.css"
 import { ReactIcon } from 'react-webtech-animated-icons';
 import ProjectCard from './ProjectCard';
+import Zoomcar from "../../img/Zoomcar.png";
+import airgarage from "../../img/airgarage.png";
+import Sendinlue from "../../img/Sendinlue.png";
 const Projects = () => {
 
   let linearColor =
@@ -12,7 +15,7 @@ const Projects = () => {
 const project = [{
 
   id:2,
-  imageUrl: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+  imageUrl: Zoomcar,
   imageAlt: 'Zoom Car',
   techStack: ['HTML','CSS','JavaScript','Bootstrape' ],
   About: 'Rent car application with a very interactive UI and lots of things to learn while working. It provides customers their service at different modes , and allow to hire car and also on rent.',
@@ -25,7 +28,7 @@ const project = [{
 },
 {
   id:3,
-  imageUrl: 'https://media.istockphoto.com/photos/sunset-in-a-rear-view-mirror-picture-id487091534?k=20&m=487091534&s=612x612&w=0&h=K4F_4wqgIgA8gMGxY91eaTnELmrD_u_5zJ70NNRp_2Q=',
+  imageUrl:Sendinlue,
   imageAlt: 'SendinBlue',
   techStack: ["JavaScript", "Bootstrap", "HTML" ,"CSS"  ],
   About: 'Digital marketing website with a clean look and containing mostly video and static sections.  The challenging part is the CSS of it',
@@ -38,7 +41,7 @@ const project = [{
 },
 {
   id:1,
-  imageUrl: 'https://media.istockphoto.com/photos/sunset-in-a-rear-view-mirror-picture-id487091534?k=20&m=487091534&s=612x612&w=0&h=K4F_4wqgIgA8gMGxY91eaTnELmrD_u_5zJ70NNRp_2Q=',
+  imageUrl: airgarage,
   imageAlt: 'AirGarage',
   techStack: [ "JavaScript", "HTML" ,"CSS", "React" , "Chakra UI" ],
   About: 'A site that allows users to locate parking along with price and rating while working and enjoyed playing with APIs ',
@@ -76,11 +79,7 @@ return (
             backgroundColor: 'rgb(97, 218, 251)',
           }}
           icon={
-            <ReactIcon
-              firstColor="#026ce8"
-              secondColor="#8ED6FB"
-              duration={2}
-            />
+            <ReactIcon firstColor="#026ce8"   secondColor="#8ED6FB"   duration={2}  />
           }
         >
           <ProjectCard project={project} />

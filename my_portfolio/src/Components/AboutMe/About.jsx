@@ -9,8 +9,8 @@ const About = () => {
             </div>
         <Grid display="grid" gap='9' gridTemplateColumns={{sm:"repeat(1,1fr)" ,md:"repeat(2,1fr)" ,lg:'30% 65%' }}pt="40px">
 
-<Box mt={{lg:'20', md:'auto'}}>
-  <Img src='https://miro.medium.com/max/1400/1*LEH5tUEQReWe8Iu-UEV3Pg.gif' />
+<Box mt={{lg:'20', md:'auto'}}>  
+  <Img className="blob" src="https://thumbs.dreamstime.com/b/programmer-freelancer-business-person-sitting-working-alone-desk-vector-illustration-135388948.jpg" />    {/* https://miro.medium.com/max/1400/1*LEH5tUEQReWe8Iu-UEV3Pg.gif */}
 </Box>
 
           <div className="details">

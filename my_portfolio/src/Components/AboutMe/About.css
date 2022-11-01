@@ -195,3 +195,26 @@
   .qualification__button.qualification__active {
     color: var(--first-color);
   } 
+
+
+  .blob{
+    overflow: hidden;
+    border-radius: 42% 56% 72% 28% /42% 42% 56% 48%; 
+    border-radius: 50%;
+    animation: motion 3.75s linear infinite;
+ /* background-size: cover; */
+  /* background-position: center; */
+  }
+  
+@keyframes motion {
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
+  }
+  33% {
+    border-radius: 72% 28% 48% 48% /28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 56% /100% 100% 42% 42%;
+  }
+}

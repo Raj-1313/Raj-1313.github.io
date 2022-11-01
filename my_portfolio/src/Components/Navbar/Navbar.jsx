@@ -1,25 +1,7 @@
 import React from "react";
-import {
-  Menu,
-  Flex,
-  Text,
-  Box,
-  Show,
-  Hide,
-  MenuButton,
-  MenuList,
-  IconButton,
-} from "@chakra-ui/react";
+import {  Menu,  Flex,  Text,  Box,  Show,  Hide,  MenuButton,  MenuList,  IconButton,} from "@chakra-ui/react";
 import NavbarIcons, { NavbarIcons1 } from "../../Parts/NavbarIcons";
-import {
-  AttachmentIcon,
-  ChatIcon,
-  EditIcon,
-  HamburgerIcon,
-  InfoIcon,
-  PhoneIcon,
-  StarIcon,
-} from "@chakra-ui/icons";
+import {  AttachmentIcon,  ChatIcon,  EditIcon,  HamburgerIcon,  InfoIcon,  PhoneIcon,  StarIcon,} from "@chakra-ui/icons";
 import "./Navbar.css";
 
 export default function Home() {

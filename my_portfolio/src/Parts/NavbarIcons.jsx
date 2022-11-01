@@ -1,4 +1,4 @@
-import {  Box, MenuItem } from "@chakra-ui/react";
+import {   MenuItem } from "@chakra-ui/react";
 import React from "react";
 import "./NavbarIcon.css"
 import {Link} from 'react-scroll';
