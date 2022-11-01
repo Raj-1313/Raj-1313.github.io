@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.70996e24.css",
-    "main.js": "/static/js/main.f006b455.js",
+    "main.css": "/static/css/main.0138d9d5.css",
+    "main.js": "/static/js/main.b4f17b55.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/Zoomcar.png": "/static/media/Zoomcar.c62797153791306bd3d4.png",
+    "static/media/airgarage.png": "/static/media/airgarage.303aa1fc1174213a6162.png",
     "static/media/portfolioImg.png": "/static/media/portfolioImg.79adaadcf65abf92c08f.png",
+    "static/media/Sendinlue.png": "/static/media/Sendinlue.f9fc46e1d2c7528666b0.png",
     "static/media/deno.svg": "/static/media/deno.04aa2c4dc756e5c4e0b671aed1a69491.svg",
     "static/media/postgresql.svg": "/static/media/postgresql.f0f3d0b9f02ed22418fc182be982a49c.svg",
     "static/media/ruby.svg": "/static/media/ruby.775cc228863c290a34668762dc1b1ac1.svg",
@@ -79,12 +82,12 @@
     "static/media/vue.svg": "/static/media/vue.5f5d16894e0a3def9502734973eb8eb5.svg",
     "static/media/vuetifyjs.svg": "/static/media/vuetifyjs.3848fcff351a0cbc94e75362594d2b25.svg",
     "static/media/bulma.svg": "/static/media/bulma.12ecb7941234000a2fe38a48cbce30da.svg",
-    "main.70996e24.css.map": "/static/css/main.70996e24.css.map",
-    "main.f006b455.js.map": "/static/js/main.f006b455.js.map",
+    "main.0138d9d5.css.map": "/static/css/main.0138d9d5.css.map",
+    "main.b4f17b55.js.map": "/static/js/main.b4f17b55.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70996e24.css",
-    "static/js/main.f006b455.js"
+    "static/css/main.0138d9d5.css",
+    "static/js/main.b4f17b55.js"
   ]
 }
