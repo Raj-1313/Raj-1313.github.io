@@ -3,32 +3,99 @@ import { Box, Container, Flex, Grid, Img, Text } from "@chakra-ui/react";
 import "./About.css";
 const About = () => {
   return (
-    <Box  id="about">      
+    <Box  id="about"  p='10' >      
          <div className="skillsHeader">
                 <h2>About</h2>
             </div>
-        <Grid display="grid" gridTemplateColumns={{sm:"repeat(1,1fr)" ,md:"repeat(2,1fr)" ,lg:"repeat(2,1fr)" }}pt="40px">
+        <Grid display="grid" gap='9' gridTemplateColumns={{sm:"repeat(1,1fr)" ,md:"repeat(2,1fr)" ,lg:'30% 65%' }}pt="40px">
+
+<Box mt={{lg:'20', md:'auto'}}>
+  <Img src='https://miro.medium.com/max/1400/1*LEH5tUEQReWe8Iu-UEV3Pg.gif' />
+</Box>
+
           <div className="details">
-            <h2 className="about-title">
-              About <span className="name">EDUCATION </span>
+             <h2 className="about-title">
+              <span className="name">EDUCATION </span>
             </h2>
-            <p>
+           <p>
               <span>Dreamer</span> | <span>Learner</span> |{" "}
               <span>Adventurer</span>
             </p>
             <hr />
-            <p>
-              Hello! welcome to About Section. I'm a web developer. I've skills
-              in HTML5,CSS3,Javascript, React, Node, Express, MongoDB.
-            </p>
-            <h3 className="link">
-              <a className="resume" href="#">
-                VIEW MY RESUME
-              </a>
-            </h3>
+           
+          
+            
+
+  <Box className="qualification__sections" mt='10' >
+  
+                    {/* <!--==================== QUALIFICATION CONTENT 1 ====================--> */}
+                    <div className="qualification__content qualification__active" data-content id="education">
+                        {/* <!--==================== QUALIFICATION 1 ====================--> */}
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Full Stack Web Development (Full Time)</h3>
+                                <span className="qualification__subtitle">Masai School.< br/> Bengaluru, Karnataka.</span>
+                                <div className="qualification__celendar">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2022 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                               
+                                <div className="qualification__rounder"></div>
+                                <div className="qualification__line"></div>
+                            </div>
+                        </div>
+
+                        {/* <!--==================== QUALIFICATION 2 ====================--> */}
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <div className="qualification__rounder"></div>
+                                <div className="qualification__line"></div>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title"> B-Tech in Civil Engineering</h3>
+                                <span className="qualification__subtitle">Vedant college of engineering & technology </span>
+                                <div className="qualification__celendar">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2017 - 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* <!--==================== QUALIFICATION 3 ====================--> */}
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Higher Secondary Education</h3>
+                                <span className="qualification__subtitle">Maharishi Sr. Sec School</span>
+                                <div className="qualification__celendar">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2016 - 2017
+                                </div>
+                            </div>
+
+                            <div>
+                                <div className="qualification__rounder"></div>
+                                <div className="qualification__line"></div>
+                            </div>
+                        </div>
+
+                        {/* <!--==================== QUALIFICATION 4 ====================--> */}
+                     
+
+                  
+                 
+                </div>
+                </Box>
           </div>
-          <Box>
-          <h2 className="about-title">
+
+{/* section 3 */}
+          {/* <Box> 
+         <h2 className="about-title">
               About <span className="name">SELF </span>
             </h2>
             <table className="title">
@@ -53,7 +120,7 @@ const About = () => {
                 <td>WEB DEVELOPMENT & TRAVELLING</td>
               </tr>
             </table>
-          </Box>
+        </Box>  */}
         </Grid>
       
     </Box>
@@ -62,28 +129,3 @@ const About = () => {
 
 export default About;
 
-{
-  /* 
-<Box h='100vh'  border='1px solid' id='about'
-//  backgroundImage='https://besthqwallpapers.com/Uploads/20-11-2021/184400/thumb2-arch-linux-carbon-logo-4k-grunge-art-carbon-background-creative.jpg' 
-  bgRepeat='no-repeat' bgSize='cover' >
-  
-  <Flex  gap='4'>
-<Box color='black' flex='6' borderRadius="30px" borderBottomRightRadius='0' h='70vh'  mt='20vh' backgroundColor='white'>
-
-<p>Hello  👋, my name is RAJ RAthor and I am a Full Stack Developer, passionate about building digital products that improve everyday experience for people.
-
-I am Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.</p>
-
-</Box>
-<Box flex='2' h='70vh' border='1px' mt='20vh'>
-<Img  src='https://cdn.dribbble.com/users/1107512/screenshots/3997677/media/0435a89ab9eea9a83e5465156053128a.gif'></Img>
-
-</Box>
-</Flex>
-
-
-</Box>
-
-*/
-}

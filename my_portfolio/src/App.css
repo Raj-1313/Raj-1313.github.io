@@ -1,6 +1,25 @@
 .App {
   text-align: center;
+  /* background-color: #282c34; */
+  /* background-image: ''; */
+  background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  /* animation: mymove 20s infinite; */
 }
+
+/* @keyframes mymove {
+  0% {background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');}
+  100% {background-image: url('https://img.freepik.com/premium-photo/black-stone-texture-dark-slate-background-top-view_88281-1206.jpg?w=2000');}
+  
+  
+} */
+
 
 .App-logo {
   height: 40vmin;
