@@ -18,8 +18,8 @@ function App() {
       gap={{lg:'2%',md:"7%"}}
       >
 
-        <Box>
-      <Navbar />
+        <Box backgroundColor='whiteAlpha.300' >
+      <Navbar  />
         </Box>
 
         <Box   className='container'>

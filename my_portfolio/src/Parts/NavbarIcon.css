@@ -9,6 +9,7 @@
     border: 1px solid rgb(90, 92, 4);
     border-radius:12px;
     color:#fdc50f;
+    font-size: 1.3rem;
     font-family: 'Playball'
     }
 .md_n_text:hover:nth-child(1){

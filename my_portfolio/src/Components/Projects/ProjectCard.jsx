@@ -1,21 +1,5 @@
 import React from "react";
-// import Card from "@mui/material/Card";
-// import CardContent from "@mui/material/CardContent";
-// import CardMedia from "@mui/material/CardMedia";
-// import Typography from "@mui/material/Typography";
-// import {  
-//   CardActionArea,
-//   CardActions,
-//   SvgIcon,
-//   Divider,
-// } from "@mui/material";
 import './Project.css'
-
-
-
-import GitHubIcon from "@mui/icons-material/GitHub";
-import PreviewIcon from "@mui/icons-material/Preview";
-
 import { Badge, Box, Container, Img, Button,  Text, HStack, Flex } from "@chakra-ui/react";
 
 const ProjectCard = ({ project }) => {
@@ -41,8 +25,7 @@ const ProjectCard = ({ project }) => {
       </Container>
       <Flex justifyContent='space-evenly' mt='4'>
         <Button          
-       onClick={() => window.open(gitlink)}
-         startIcon={<GitHubIcon />}
+       onClick={() => window.open(gitlink)}        
          style={{
           borderRadius:"12px",
           background: "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
@@ -58,7 +41,7 @@ const ProjectCard = ({ project }) => {
     boxShadow: "0px 20px 24px 3px rgba(251,161,40,0,42)"
 }}   
           onClick={() => window.open(deploy)}
-          startIcon={<PreviewIcon />}
+         
         >
           Demo
         </Button>

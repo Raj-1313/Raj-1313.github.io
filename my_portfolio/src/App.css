@@ -3,6 +3,8 @@
   /* background-color: #282c34; */
   /* background-image: ''; */
   background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,15 +12,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  /* animation: mymove 20s infinite; */
+  animation: mymove 10s infinite;
 }
 
-/* @keyframes mymove {
+@keyframes mymove {
   0% {background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');}
-  100% {background-image: url('https://img.freepik.com/premium-photo/black-stone-texture-dark-slate-background-top-view_88281-1206.jpg?w=2000');}
+  50% {background-image: url('https://img.freepik.com/premium-photo/black-stone-texture-dark-slate-background-top-view_88281-1206.jpg?w=2000');}
+  100% {background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');}
   
   
-} */
+}
 
 
 .App-logo {
