@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0603d289.css",
-    "main.js": "/static/js/main.19d4ead3.js",
+    "main.css": "/static/css/main.847384ad.css",
+    "main.js": "/static/js/main.348da128.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Zoomcar.png": "/static/media/Zoomcar.c62797153791306bd3d4.png",
     "static/media/airgarage.png": "/static/media/airgarage.303aa1fc1174213a6162.png",
@@ -82,12 +82,12 @@
     "static/media/vue.svg": "/static/media/vue.5f5d16894e0a3def9502734973eb8eb5.svg",
     "static/media/vuetifyjs.svg": "/static/media/vuetifyjs.3848fcff351a0cbc94e75362594d2b25.svg",
     "static/media/bulma.svg": "/static/media/bulma.12ecb7941234000a2fe38a48cbce30da.svg",
-    "main.0603d289.css.map": "/static/css/main.0603d289.css.map",
-    "main.19d4ead3.js.map": "/static/js/main.19d4ead3.js.map",
+    "main.847384ad.css.map": "/static/css/main.847384ad.css.map",
+    "main.348da128.js.map": "/static/js/main.348da128.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0603d289.css",
-    "static/js/main.19d4ead3.js"
+    "static/css/main.847384ad.css",
+    "static/js/main.348da128.js"
   ]
 }
