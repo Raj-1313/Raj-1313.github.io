@@ -3,7 +3,6 @@ import React from "react";
 import "../HomePage/HomePage.css";
 import Type from "../../Parts/type";
 import { TypeDot } from "../../Parts/type";
-import vave from "../../img/Vector1.png";
 import portfolioImg from "../../img/portfolioImg.png";
 
 const HomePage = () => {

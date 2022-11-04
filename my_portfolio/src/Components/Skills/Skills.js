@@ -11,13 +11,16 @@ function Skills() {
    'Javascript',
    'CSS',
    'React',  
-   "typescript"
+   "typescript",
+   "express", 
 ]
  const skillsData1 = [     
-   'MongoDB',   
+   'mongodb',   
    'canva',
    "bootstrap",
-   
+   "nodejs",
+   "chakra",
+   "git"
 ]
 
 

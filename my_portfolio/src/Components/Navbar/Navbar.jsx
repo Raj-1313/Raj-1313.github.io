@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       <Show below="md">
-      <Flex  pos='fixed'  w='100vw' background='black' zIndex={"2"} h='20' borderBottomRadius='20px' alignItems='center' justifyContent='space-between' p='5' borderBottom='1px solid #fdc50f'>
+      <Flex  pos='fixed'  w='100vw' background='black' zIndex="20" h='20' borderBottomRadius='20px' alignItems='center' justifyContent='space-between' p='5' borderBottom='1px solid #fdc50f'>
        
        
       <Box  className="n-signature">
