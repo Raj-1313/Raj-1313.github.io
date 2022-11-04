@@ -7,6 +7,8 @@ import Contect from "./Components/Contect/Contect"
 import Skills from "./Components/Skills/Skills"
 import Project from "./Components/Projects/Projects"
 import { Box,  Grid } from '@chakra-ui/react';
+import Calender from './Components/Github/Calender';
+
 
 
 function App() {
@@ -14,23 +16,25 @@ function App() {
 
   return (
     <div className="App" >
-      <Grid  templateColumns={{sm:'0 100%',md:"15% 83%"}}
-      gap={{lg:'2%',md:"7%"}}
+      <Grid 
+       templateColumns={{base:'100%',sm:"100%",md:"200px auto" ,lg:"200px auto"}}
+      // gap={{lg:'2%'}}     
       >
 
-        <Box backgroundColor='whiteAlpha.300' >
-      <Navbar  />
-        </Box>
+        <Box><Navbar/></Box>
 
-        <Box   className='container'>
-      <HomePage/>
-      <About/>
-     <Skills/>
-      <Project/> 
-    <Contect/>  
+        <Box className='container'>
+
+        <HomePage/>
+        <About/>
+      <Skills/>
+        <Project/> 
+        <Calender  />     
+      <Contect/>  
+
         </Box>
     </Grid>
-          </div>
+           </div>
   );
 }
 

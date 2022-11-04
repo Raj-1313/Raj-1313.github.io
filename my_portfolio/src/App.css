@@ -60,10 +60,10 @@
 }
 /* my classses */
 .container{ 
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* scroll-snap-type: y mandatory; */
+  overflow-y: hidden;
 }
-.container>:nth-child(1){ 
+/* .container>:nth-child(1){ 
   scroll-snap-align: start;
 }
 .container>:nth-child(2){  
@@ -77,7 +77,7 @@
 }
 .container>:nth-child(5){  
   scroll-snap-align: start;
-}
+} */
 
 
 
@@ -123,3 +123,8 @@
   border: 1px solid rgb(17, 226, 111);
   scroll-snap-align: start;
 } */
+
+.skillsHeader{
+  border:1px soild red;
+  display: none;
+}

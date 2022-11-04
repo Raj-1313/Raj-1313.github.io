@@ -28,9 +28,14 @@ export default function Home() {
     },
     {
       url: <PhoneIcon />,
+      title: "Github",
+      id: "Github",
+    },
+    {
+      url: <PhoneIcon />,
       title: "Contect",
       id: "contect",
-    },
+    }, 
     {
       url: <AttachmentIcon />,
       title: "Resume",
@@ -71,7 +76,7 @@ export default function Home() {
             _hover={{ bg: 'gray.400' }}
             _focus={{ boxShadow: 'outline' }}
           />
-          <MenuList w='0.70%' >
+          <MenuList bg= 'linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)' >
             {data.map((ele) => (
               <NavbarIcons props={{ url: ele.url, title: ele.title , id : ele.id}} />
             ))}
@@ -81,9 +86,9 @@ export default function Home() {
       </Show>
 
   
-     <Hide below="md"  >
+     <Show above="md" >
 
-     <Box pos='absolute' right='6' top='4' className="n-signature" >
+     <Box pos='absolute' right='6' top='4' className="n-signature" zIndex='3' >
      <Wrap >
   <WrapItem>
     <Avatar name='RAJ RATHOR' src='https://static.vecteezy.com/system/resources/thumbnails/013/062/986/small/glasses-logo-design-spectacles-icon-design-template-free-vector.jpg' />
@@ -91,14 +96,12 @@ export default function Home() {
      </Wrap>
           </Box>
       
-          <Box  pos="fixed" >
+          <Box  pos="fixed" w='200px' backgroundColor='black' borderRight='3px solid #fdc50f'  borderRightRadius='30px'   >
           <Box
             textAlign="center"
             p="10px"
-            mt="10"
-           w='190px'
-           h='100vh'
-            borderRadius="50px"
+            mt="10"         
+           h='95vh'             
           >
             <Menu>
               <Flex flexDirection="column" gap="10px" alignItems="center">
@@ -112,7 +115,7 @@ export default function Home() {
             </Menu>
           </Box>
         </Box>
-      </Hide>
+      </Show>
 
 
 

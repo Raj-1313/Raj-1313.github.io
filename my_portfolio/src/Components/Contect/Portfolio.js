@@ -1,35 +1,44 @@
 export const socialMediaLinks = [
-    /* Your Social Media Link */
-    // github: "https://github.com/ashutosh1919",
-    // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-    // gmail: "ashutoshhathidara98@gmail.com",
-    // gitlab: "https://gitlab.com/ashutoshhathidara98",
-    // facebook: "https://www.facebook.com/laymanbrother.19/",
-    // twitter: "https://twitter.com/ashutosh_1919",
-    // instagram: "https://www.instagram.com/layman_brother/"
-  
+   
     {
+      id:1,
+      name: "Email",
+      contact_info: 'raj1rathore.1@gmail.com',
+      link: "raj1rathore.1@gmail.com",
+      fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
+      backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+    },
+       {
+        id:2,
+      name: "Phone",
+      contact_info: "+91 9784070693",
+      link: "#",
+      fontAwesomeIcon: "fa-skype", // Reference https://fontawesome.com/icons/instagram?style=brands
+      backgroundColor: "Blue", // Reference https://simpleicons.org/?q=instagram
+    },
+    {
+      id:3,
+      name: "Location",
+      contact_info: "Kota (Rajasthan)",
+      link: "#",
+      fontAwesomeIcon: "fa-skype", // Reference https://fontawesome.com/icons/instagram?style=brands
+      backgroundColor: "Blue", // Reference https://simpleicons.org/?q=instagram
+    },
+       {
+        id:4,
       name: "Github",
-      link: "https://github.com/RainbowSunDev",
+      contact_info: "Raj-1313",
+      link: "https://github.com/Raj-1313",
       fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
       backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
     },
     {
-      name: "Gmail",
-      link: "thsbluehsg@gmail.com",
-      fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-      backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+      id:5,
+      name: "HackerRank",
+      contact_info: "raj-hacker/1313",
+      link: "https://www.hackerrank.com/theromeo_1313",
+      fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
+      backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
     },
-    {
-      name: "Telegram",
-      link: "https://t.me/RainbowSunDev",
-      fontAwesomeIcon: "fa-telegram", // Reference https://fontawesome.com/icons/instagram?style=brands
-      backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-    },
-    {
-      name: "Skype",
-      link: "https://t.me/RainbowSunDev",
-      fontAwesomeIcon: "fa-skype", // Reference https://fontawesome.com/icons/instagram?style=brands
-      backgroundColor: "Blue", // Reference https://simpleicons.org/?q=instagram
-    },
+ 
   ];

@@ -10,6 +10,7 @@ import Sendinlue from "../../img/Sendinlue.png";
 const Projects = () => {
 
   let linearColor =
+  // 'linear-gradient(to left, #cb910e, #d3a207, #dab401, #e0c600, #e3d904)';
   'linear-gradient( to bottom, #331992, #3326a2, #3233b3, #2e3fc4, #274bd5, #165cdf, #026ce8, #007cef, #008ee9, #009ad6, #00a3be, #30a8a8 )';
 
 const project = [{
@@ -55,13 +56,16 @@ const project = [{
 ]
  
 return (
-  <Box  id='project'>
-  <VerticalTimeline  lineColor={linearColor} className="vertical-line">
+  <Box  id='project'> 
+     <div  className="skillsHeader"  mt='16' mb='25'>
+                <h2  >PROJECTS</h2>
+            </div>
+  <VerticalTimeline lineColor={linearColor}  className="vertical-line">
     {project.map((project) => {
       return (
         <VerticalTimelineElement
           key={project.id}
-          className="vertical-timeline-element--project"
+          // className="vertical-timeline-element--project"
           contentStyle={{
             background: 'white',
             color: '#fff',
