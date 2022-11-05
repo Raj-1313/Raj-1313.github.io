@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Container, Flex, Grid, Img, Text } from "@chakra-ui/react";
+import { Box,  Grid, Img } from "@chakra-ui/react";
 import "./About.css";
 const About = () => {
   return (
-    <Box  id="about"  p='10' >      
-         <div className="skillsHeader">
+    <Box id="about"   mb='20px'>      
+         <Box pt={{sm:'40px'}}  className="skillsHeader">
                 <h2>About</h2>
-            </div>
+            </Box>
         <Grid display="grid" gap='9' gridTemplateColumns={{sm:"repeat(1,1fr)" ,md:"repeat(2,1fr)" ,lg:'30% 65%' }}pt="40px">
 
 <Box mt={{lg:'20', md:'auto'}}>  

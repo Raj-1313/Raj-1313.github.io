@@ -56,10 +56,10 @@ const project = [{
 ]
  
 return (
-  <Box  id='project'> 
-     <div  className="skillsHeader"  mt='16' mb='25'>
+  <Box  id='project'    pt={{sm:'10px'}}> 
+     <Box  className="skillsHeader"  mt='16' mb='25'>
                 <h2  >PROJECTS</h2>
-            </div>
+            </Box>
   <VerticalTimeline lineColor={linearColor}  className="vertical-line">
     {project.map((project) => {
       return (

@@ -199,7 +199,7 @@ opacity:0
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  background: #28282d;
+  background: #dadd246f;
   border-radius: 10px;
 }
 
@@ -207,7 +207,7 @@ opacity:0
   transform: translate(10px, 10px);
   width: 35px;
   height: 35px;
-  background: #ffffff15;
+  background: #dc940f18;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
@@ -230,6 +230,4 @@ opacity:0
   transition: 0s;
   transform: translate(0, 5%);
 }
-
-/* text mail name number */
 

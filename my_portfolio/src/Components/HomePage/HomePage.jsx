@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Hide, Img, Show, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Hide, Img,  Text } from "@chakra-ui/react";
 import React from "react";
 import "../HomePage/HomePage.css";
 import Type from "../../Parts/type";
@@ -7,7 +7,8 @@ import portfolioImg from "../../img/portfolioImg.png";
 
 const HomePage = () => {
   return (
-    <Grid
+    <Grid    
+    mt={{sm:'70px'}}
       templateColumns={{
         lg: "repeat(2,1fr)",
         base: "repeat(1,1fr)",
@@ -16,11 +17,12 @@ const HomePage = () => {
       }}
       h="100vh"
       p="5%"
+      mb='30px'
       alignContent="center"
       // border="1px solid red"
       id="home"
     >
-      <Box className="i-name">
+      <Box className="i-name" >
         <div style={{ display: "flex", lineHeight: "100px" }}>
           <Text fontSize={{ base: "sm", sm: "md", md: "2xl", lg: "3xl" }}>       
             Hello I Am
@@ -52,13 +54,13 @@ const HomePage = () => {
         <Type />
       </Box>
 
-      <Hide below="md">
+      {/* <Hide below="md"> */}
         <Flex className="i-right"  justifyContent='center' alignItems='center'>
           <Img
             className="profileimg"
             src={portfolioImg}              
-            maxW={{ md: "55%", lg: "65%" }}
-            maxH={{ md: "55%", lg: "65%" }}
+            maxW={{ sm: "70%", md: "55%", lg: "65%" }}
+            maxH={{  sm: "70%",md: "55%", lg: "65%" }}
             alignItems="center"
             alt="no img"
           
@@ -68,7 +70,7 @@ const HomePage = () => {
             borderColor="#fb982f"
               />
         </Flex>
-      </Hide>
+      {/* </Hide> */}
     </Grid>
   );
 };

@@ -22,20 +22,19 @@ function Github() {
   };
 
   return (
-    <Box  w='full'  mt='16' mb='25' id='Github' >
+    <Box  pt={{sm:'30px'}} w='full'  mt='50px' mb='25' id='Github' >
     
     
-        <div className="skillsHeader">
+        <Box  pt={{sm:'30px'}} className="skillsHeader">
         <h2 > GITHUB STATS </h2>
-        </div>
+        </Box>
        
      
      
       <Flex  flexDir='column' align='center' mt='10'>
         <GitHubCalendar
           username="Raj-1313"
-          transformData={selectLastHalfYear}
-          
+          transformData={selectLastHalfYear}          
           />
      
    

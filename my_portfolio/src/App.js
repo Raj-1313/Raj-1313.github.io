@@ -11,6 +11,7 @@ import Calender from './Components/Github/Calender';
 
 
 
+
 function App() {
 
 
@@ -27,11 +28,11 @@ function App() {
 
         <HomePage/>
         <About/>
-      <Skills/>
+        <Skills/>
         <Project/> 
-        <Calender  />     
-      <Contect/>  
-
+        <Calender />     
+        <Contect/>  
+      
         </Box>
     </Grid>
            </div>

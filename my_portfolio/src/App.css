@@ -1,8 +1,7 @@
 .App {
   text-align: center;
-  /* background-color: #282c34; */
-  /* background-image: ''; */
-  background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');
+  background-color: #282c34;
+  
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -12,16 +11,19 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  animation: mymove 10s infinite;
+  animation: mymove 4s infinite;
 }
 
-@keyframes mymove {
-  0% {background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');}
-  50% {background-image: url('https://img.freepik.com/premium-photo/black-stone-texture-dark-slate-background-top-view_88281-1206.jpg?w=2000');}
-  100% {background-image: url('https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg');}
+/* @keyframes mymove {
+    0% {background-color: #282c34 }
+    25% {background-color: rgb(90, 79, 79) } 
+    50% {background-color: #282c34 }
+    75% {background-color: black } 
   
+   100% {background-color: #282c34} 
+ 
   
-}
+} */
 
 
 .App-logo {
@@ -124,7 +126,50 @@
   scroll-snap-align: start;
 } */
 
-.skillsHeader{
-  border:1px soild red;
-  display: none;
+/* <!-- HTML !--> */
+/* <button class="button-48" role="button"><span class="text">Button 48</span></button> */
+
+/* CSS */
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+ 
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+
+.button-48:hover:before {
+ 
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
 }
