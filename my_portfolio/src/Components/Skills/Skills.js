@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 import './Skills.css'
 import { skillsImage } from './skillsImage'
-import { Box} from '@chakra-ui/react';
+import { Box, Flex} from '@chakra-ui/react';
 
 function Skills() {
  const skillsData = [
@@ -31,13 +31,14 @@ function Skills() {
     }
 
     return (
-        <Box id ="skills" className="skills1"    pt={{sm:'30px'}}>
+        <Flex flexDir='column'alignItems='center' id ="skills" className="skills1"  m='auto'  pt={{sm:'30px'}}>
             <Box pt={{sm:'30px'}} className="skillsHeader">
                 <h2>Skills</h2>
             </Box>
            
-                <div className="skill--scroll">
+                <Box className="skill--scroll" >
                     <Marquee 
+                    
                         gradient={false} 
                         speed={80} 
                         pauseOnClick={true} 
@@ -46,14 +47,14 @@ function Skills() {
                         direction="left"
                     >
                         {skillsData.map((skill, id) => (
-                            <div className="skill--box" key={id} style={skillBoxStyle}>
+                            <Box className="skill--box" key={id} style={skillBoxStyle}>
                                 <img src={skillsImage(skill)} alt={skill} />
                                 <h3 
                                 style={{color: '#212121'}}
                                 >
                                     {skill}
                                 </h3>
-                            </div>
+                            </Box>
                         ))}
                     </Marquee>
                     {/* <Hide below='md'> */}
@@ -77,9 +78,9 @@ function Skills() {
                         ))}
                     </Marquee>
                     {/* </Hide> */}
-                </div>
+                </Box>
          
-        </Box>
+        </Flex>
     )
 }
 

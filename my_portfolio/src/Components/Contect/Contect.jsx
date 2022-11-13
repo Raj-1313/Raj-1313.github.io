@@ -1,61 +1,105 @@
-import { Box, Button,   Flex, Grid,  Text, Textarea } from "@chakra-ui/react";
+import { Box, Button,  Grid, Img, Input, Text, Textarea } from "@chakra-ui/react";
 import "./Contacts.css";
 import React from "react";
 import "./Contacts.css";
+import wave from "../../img/wave.png";
 import { socialMediaLinks } from "./Portfolio";
-import {RiHeart2Fill, RiSendPlaneFill} from "react-icons/ri"
-import {TbActivityHeartbeat} from "react-icons/tb"
+import { RiHeart2Fill, RiSendPlaneFill } from "react-icons/ri";
+import { useState } from "react";
+
+
 const Contect = () => {
+const [thoughts,setthoughts]=useState('')
+const [senderemail,setSenderEmail]=useState('')
+
+const handleSubmit=(e) => {
+  e.preventDefault()
+let objData={
+  senderemail,thoughts
+}
+console.log(objData)
+}
   return (
-    <Box id="contect"   mt={{sm:'70px'}} >
-<Box pt={{sm:'40px'}}  className="skillsHeader">
-                <h2>Contact Me...</h2>
-            </Box>
+    <Box id="contect" mt={{ sm: "70px" }}   background='#292721aa' borderTopRadius='30'>
+      <Box pt={{ sm: "40px" }} className="skillsHeader">
+        <h2>Contact Me...</h2>
+      </Box>
+
       <Box className="contact-me2" p='20px'>
-        <Grid templateColumns="repeat(2,1fr)" gap='30' mb='20px'>          
-            <div >
+        <Grid templateColumns={{lg:"repeat(2,1fr)",md:"repeat(1,1fr)"}} gap='30' >          
+            <Box >
               <Text fontSize='xl' className="button-85" >Let's Work Together</Text>
 
-              <Grid templateColumns={{sm:"repeat(2,1fr)",md:"repeat(2,1fr)", lg:"repeat(3,1fr)"}} gap='10' mt='20px' mb='20px' >
+              <Grid templateColumns={{base:"repeat(2,1fr)",md:"repeat(3,1fr)"}}   gap='10' mt='20px' mb='20px' >
           {socialMediaLinks.map((details) => (
-            <a href={details.link} target="_blank" >
-            <Box  m='auto' className="contact-info" key={details.id}  fontSize='13px'
-            fontWeight='500' alignContent='center'>
-            
-      
-        <Box w='30px' h='30px' className='button-86'>{details.fontAwesomeIcon}</Box>           
-             
-            </Box></a>
+          
+            <Box as='a'  href={details.link} target="_blank"  key={details.id}  fontSize='20px'
+            //  alignContent='center' 
+            w='30%' m='auto'
+             >     
+        <Box
+         w='30px' h='30px' p='16px' 
+         className='button-86'>{details.fontAwesomeIcon}</Box>                
+            </Box>
           ))}
         </Grid>
-                </div>
+                </Box>
          
-          <div>
+{/* text Area */}
+
+          <form onSubmit={handleSubmit}>
+<Input type='email' placeholder="May I know your Email...."  onChange={({target})=>setSenderEmail(target.value)} ></Input>
             <Textarea
             resize='none'
+            onChange={({target})=>setthoughts(target.value)}
             focusBorderColor='yellow.400'
             h="200px"
-              placeholder="Share thoughts..."
+              placeholder="Share amazing thoughts..."
               required=""
               size='lg'
             />
             <Button  type="submit" class="button-53">
              <RiSendPlaneFill/>
             </Button>
-          </div>
+          </form>
         </Grid>
 
      
       </Box>
-      <Box border='1px solid red' display={'flex'} justifyContent='center' alignItems='center' w='100%' h='30vh' >
-        <Text >
-        Made with  by RAJ RATHOR
-        </Text>
-          
+
+{/* Footer Section */}
+      <Box
+        display={"flex"}
+        justifyContent="center"
+        alignItems="center"       
+        pos="relative"
+        overflow="hidden"
+      >
+          <Text mt='10%' zIndex="10" bg='blackAlpha.500' borderTopColor='#fdc50f' px='3' borderRadius='34'
+           fontFamily="Pacifico" 
+            fontSize='1.2rem'  >
+            Made with
+            
+            <Box as="Button" p="1">
+              <RiHeart2Fill color="red" />
+            </Box>
+            
+            <Box as="Button" p="1"  fontFamily="Kalam" fontWeight='bold' fontSize='1.4rem' >
+            by RAJ RATHOR
+            </Box>
+          </Text>
+
+        <Box pos="absolute"  top="-15">
+          <Img zIndex="-12" src={wave}></Img>
+        </Box>
       </Box>
+{/* Footer Section */}
+
     </Box>
   );
 };
 
 export default Contect;
-{/* <span><TbActivityHeartbeat color='red'/> <RiHeart2Fill  color='red'/><TbActivityHeartbeat /></span> */}
+{
+  /* <span><TbActivityHeartbeat color='red'/> <RiHeart2Fill  color='red'/><TbActivityHeartbeat /></span> */
+}

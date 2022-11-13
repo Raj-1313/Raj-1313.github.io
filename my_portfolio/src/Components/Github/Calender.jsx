@@ -7,7 +7,7 @@ function Github() {
   const selectLastHalfYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
+    const shownMonths = 12;
 
     return contributions.filter((day) => {
       const date = new Date(day.date);
@@ -42,11 +42,21 @@ function Github() {
          p='5'
         m="16"
         gap={{ base: "3", md: "10" }}
-        gridTemplateColumns={{ base: "1fr", md: "repeat(3,1fr)" }}
+        gridTemplateColumns={{ base: "1fr", lg: "repeat(3,1fr)" }}
       >
+        
+
+        <Box>
         <Image  src="https://streak-stats.demolab.com/?user=Raj-1313&theme=nord&border_radius=30&date_format=M%20j%5B%2C%20Y%5D" />
+        </Box>
+
+        <Box>
         <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raj-1313&layout=compact&theme=nord&border_radius=30" />
+        </Box>
+
+        <Box>
         <Image src="https://github-readme-stats.vercel.app/api?username=Raj-1313&count_private=true&theme=nord&border_radius=30" />
+        </Box>
       </Grid>
       </Flex>
     </Box>

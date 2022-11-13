@@ -1,16 +1,8 @@
 .contact-me2 {
     padding: 30px 60px 10px 60px;   
-    background: #292721aa;
-    
     z-index: 3 !important;
     position: relative !important;
   }
-
-  
-  .contact-info { 
-    border-radius: 10px; 
-  }
-  
   .button-48{
   margin-left: 30px;
   animation: texting 2s 1;
@@ -37,12 +29,9 @@ opacity:0
     .sec-btn {
       margin-top: 10px;
     }
-    .contact-info {
-      margin-bottom: 0px;
-    }
+  
     .contact-me2 {
       padding: 30px 20px;
-      background: #0c0122;
     }
   }
   
@@ -165,17 +154,10 @@ opacity:0
 
 /* CSS */
 .button-86 {
-  all: unset;
-  width: 100px;
-  height: 30px;
-  font-size: 16px;
+  all: unset; 
   background: transparent;
-  border: none;
   position: relative;
-  color: #f0f0f0;
   cursor: pointer;
-  z-index: 1;
-  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,8 +187,8 @@ opacity:0
 
 .button-86::after {
   transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
+  /* width: 35px;
+  height: 35px; */
   background: #dc940f18;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

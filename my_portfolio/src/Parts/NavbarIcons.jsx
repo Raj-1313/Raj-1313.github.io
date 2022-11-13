@@ -18,6 +18,7 @@ const NavbarIcons = ({ props }) => {
 
 export default NavbarIcons;
 
+// const Resume='https://drive.google.com/u/0/uc?id=1wucaOltUjDlKKx7y820FAH1PrdRJtURQ&export=download'
 
 
 
@@ -25,9 +26,11 @@ const NavbarIcons1 = ({ props }) => {
   const { url, title ,id } = props;
   return (
     <>
-   <Link  to={id} spy={true}  smooth={true} fontSize={{base:'xs',sm:'sm',md:'md',lg:'xl'}}  className="md_n_text" >
+    {
+      <Link to={id} spy={true}  smooth={true} fontSize={{base:'xs',sm:'sm',md:'md',lg:'xl'}}  className="md_n_text" >
         {title}   
         </Link>
+  }
     </>
   );
 };
