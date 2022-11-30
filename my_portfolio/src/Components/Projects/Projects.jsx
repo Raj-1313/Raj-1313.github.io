@@ -32,7 +32,7 @@ const project = [{
   imageUrl:Sendinlue,
   imageAlt: 'SendinBlue',
   techStack: ["JavaScript", "Bootstrap", "HTML" ,"CSS"  ],
-  About: 'Digital marketing website with a clean look and containing mostly video and static sections.  The challenging part is the CSS of it',
+  About: 'Sendinblue is the smartest and most intuitive platform for growing businesses and empowering B2B and B2C businesses, ecommerce sellers and agencies to build customer relationships.',
   Title: 'SENDINBLUE',
   time: 'Completed in 5 Days',
   projectType: 'Individual',
@@ -45,7 +45,7 @@ const project = [{
   imageUrl: airgarage,
   imageAlt: 'AirGarage',
   techStack: [ "JavaScript", "HTML" ,"CSS", "React" , "Chakra UI" ],
-  About: 'A site that allows users to locate parking along with price and rating while working and enjoyed playing with APIs ',
+  About: 'AirGarage is a full service parking operator and a site that allows users to locate parking along with price and rating.',
   Title: 'AIR GARAGE',
   time: 'Completed in 5 Days',
   projectType: 'Individual',
@@ -63,11 +63,14 @@ return (
   <VerticalTimeline lineColor={linearColor}  className="vertical-line">
     {project.map((project) => {
       return (
+       
         <VerticalTimelineElement
           key={project.id}
           // className="vertical-timeline-element--project"
           contentStyle={{
             background: 'white',
+            padding:'0px',
+            background:'linear-gradient(to bottom, rgba(102,102,102,1) 0%, rgba(18,18,18,1) 0%, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 0%, rgba(77,77,77,1) 0%, rgba(28,28,28,1) 0%, rgba(43,43,43,1) 60%, rgba(187,195,70,1) 100%',
             color: '#fff',
             borderRadius: 15,
             boxShadow:
@@ -88,6 +91,7 @@ return (
         >
           <ProjectCard project={project} />
         </VerticalTimelineElement>
+     
       );
     })}
   </VerticalTimeline>

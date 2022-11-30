@@ -2,17 +2,19 @@
 
 .skillsHeader {
     display: flex;
-    align-items: center;
-    justify-content: center; 
-
+    width:100%;
+    /* border: 1px solid red; */
+    justify-content: right; 
+    padding-right: 10%;
 }
 
 .skillsHeader h2 {   
     font-family: Pacifico ,serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 4.5rem;
+    text-align: right;
+    opacity: 0.3;
     
 }
 

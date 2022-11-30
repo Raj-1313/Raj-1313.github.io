@@ -16,7 +16,7 @@ function App() {
 
 
   return (
-    <div className="App" >
+    <div className="App">
       <Grid 
        templateColumns={{base:'100%',sm:"100%",md:"200px auto" ,lg:"200px auto"}}
       // gap={{lg:'2%'}}     
