@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import {  VerticalTimeline,  VerticalTimelineElement,} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import "./Project.css"
+
 import { ReactIcon } from 'react-webtech-animated-icons';
 import ProjectCard from './ProjectCard';
 import Zoomcar from "../../img/Zoomcar.png";
@@ -56,8 +56,8 @@ const project = [{
 ]
  
 return (
-  <Box  id='project'    pt={{sm:'10px'}}> 
-     <Box  className="skillsHeader"  mt='16' mb='25'>
+  <Box  id='project'   pt={{base:'60px',lg:'2'}}> 
+     <Box  className="skillsHeader"  mt='5' mb='25'>
                 <h2  >PROJECTS</h2>
             </Box>
   <VerticalTimeline lineColor={linearColor}  className="vertical-line">

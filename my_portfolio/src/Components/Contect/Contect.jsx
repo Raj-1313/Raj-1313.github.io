@@ -20,7 +20,7 @@ let objData={
 console.log(objData)
 }
   return (
-    <Box id="contect" mt={{ sm: "70px" }}   background='#292721aa' borderTopRadius='30'>
+    <Box id="contect" mt={{base: "70px",lg:'2' }}  background='#292721aa' borderTopRadius='30'>
       <Box pt={{ sm: "40px" }} className="skillsHeader">
         <h2>Contact Me...</h2>
       </Box>

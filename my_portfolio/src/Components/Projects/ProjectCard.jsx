@@ -1,5 +1,5 @@
 import React from "react";
-import "./Project.css";
+
 import {
   Badge,
   Box,

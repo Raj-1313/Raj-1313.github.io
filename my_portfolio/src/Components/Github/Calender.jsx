@@ -22,10 +22,10 @@ function Github() {
   };
 
   return (
-    <Box  pt={{sm:'30px'}} w='full'  mt='50px' mb='25' id='Github' >
+    <Box  pt={{base:'60px',lg:'2'}} w='full'  mt='50px'  id='Github' >
     
     
-        <Box  pt={{sm:'30px'}} className="skillsHeader">
+        <Box  className="skillsHeader">
         <h2 > GITHUB STATS </h2>
         </Box>
        

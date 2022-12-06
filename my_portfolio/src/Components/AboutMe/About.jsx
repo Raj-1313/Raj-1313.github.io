@@ -3,8 +3,8 @@ import { Box,  Grid, Img } from "@chakra-ui/react";
 import "./About.css";
 const About = () => {
   return (
-    <Box id="about"   mb='20px'>      
-         <Box pt={{sm:'40px'}}  className="skillsHeader">
+    <Box id="about" pt={{base:'70px',lg:'2'}} mb='20px'>      
+         <Box  className="skillsHeader">
                 <h2>About</h2>
             </Box>
         <Grid display="grid" gap='9' gridTemplateColumns={{sm:"repeat(1,1fr)" ,md:"repeat(2,1fr)" ,lg:'30% 65%' }}pt="40px">

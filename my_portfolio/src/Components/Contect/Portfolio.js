@@ -9,7 +9,7 @@ export const socialMediaLinks = [
       id:1,
       name: "Email",
       contact_info: 'raj1rathore.1@gmail.com',
-      link: "raj1rathore.1@gmail.com",
+      link: "mailto:raj1rathore.1@gmail.com",
       fontAwesomeIcon: <MdMarkEmailRead/>, // Reference https://fontawesome.com/icons/google?style=brands
       backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
     },
@@ -17,7 +17,7 @@ export const socialMediaLinks = [
         id:2,
       name: "Phone",
       contact_info: "+91 9784070693",
-      link: "#",
+      link: "tel:9784070693",
       fontAwesomeIcon: <ImPhoneHangUp/>, // Reference https://fontawesome.com/icons/instagram?style=brands
       backgroundColor: "Blue", // Reference https://simpleicons.org/?q=instagram
     },
