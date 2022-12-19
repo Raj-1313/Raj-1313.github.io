@@ -1,13 +1,13 @@
 import { Box, Flex, Grid,  Image } from "@chakra-ui/react";
 import React from "react";
-
+import {motion} from "framer-motion"
 import GitHubCalendar from "react-github-calendar";
 
 function Github() {
   const selectLastHalfYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
-    const shownMonths = 12;
+    const shownMonths = 8;
 
     return contributions.filter((day) => {
       const date = new Date(day.date);
@@ -25,17 +25,27 @@ function Github() {
     <Box  pt={{base:'60px',lg:'2'}} w='full'  mt='50px'  id='Github' >
     
     
-        <Box  className="skillsHeader">
+        <Box  className="skillsHeader" >
         <h2 > GITHUB STATS </h2>
         </Box>
        
      
      
       <Flex  flexDir='column' align='center' mt='10'>
+
+        <Box borderLeft='3px solid ' padding='4' >
+          <motion.div
+          initial={{x:'400px',opacity:0}} 
+          animate={{x:'0',opacity:1}} 
+          transition={{delay:'0.2',duration:'1.5'}}
+          >
+
         <GitHubCalendar
           username="Raj-1313"
           transformData={selectLastHalfYear}          
           />
+          </motion.div>
+          </Box>
      
    
       <Grid
@@ -46,17 +56,29 @@ function Github() {
       >
         
 
-        <Box>
+        <motion.div
+          initial={{x:'-200px',opacity:0}} 
+          animate={{x:'0',opacity:1}} 
+          transition={{delay:'0.2',duration:'1.5'}}
+          >
         <Image  src="https://streak-stats.demolab.com/?user=Raj-1313&theme=nord&border_radius=30&date_format=M%20j%5B%2C%20Y%5D" />
-        </Box>
+        </motion.div>
 
-        <Box>
+        <motion.div
+          initial={{y:'200px',opacity:0}} 
+          animate={{y:'0',opacity:1}} 
+          transition={{delay:'0.2',duration:'1.5'}}
+          >
         <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raj-1313&layout=compact&theme=nord&border_radius=30" />
-        </Box>
+        </motion.div>
 
-        <Box>
+        <motion.div
+          initial={{x:'200px',opacity:0}} 
+          animate={{x:'0',opacity:1}} 
+          transition={{delay:'0.2',duration:'1.5'}}
+          >
         <Image src="https://github-readme-stats.vercel.app/api?username=Raj-1313&count_private=true&theme=nord&border_radius=30" />
-        </Box>
+        </motion.div>
       </Grid>
       </Flex>
     </Box>

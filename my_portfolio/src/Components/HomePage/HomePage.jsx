@@ -1,4 +1,4 @@
-import { Box, Flex, Grid,  Img,  Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid,  Img,  Text } from "@chakra-ui/react";
 import React from "react";
 import Type from "../../Parts/type";
 import { TypeDot } from "../../Parts/type";
@@ -47,13 +47,26 @@ const HomePage = () => {
           lineHeight={{ base: "20px", sm: "23px", md: "24px", lg: "26px",xl:"35px" }}
           fontSize={{ sm: "16px", md: "16px", lg: "18px",xl:"20px" }}
         >
-          Full Stack Web Developer, looking for a suitable work opportunity,
+          Looking for a suitable work opportunity,
           preferably in an IT company, which renders a challenging career,
           providing the opportunities to enhance my educational and technical
-          skills that ultimately deliver maximum benefit to the company and
-          scale a new high in my career.
-          {/* Full Stack Web Developer with good level of knowledge in web designing  and development, producting the Quality work. 
+          skills 
+          <br />
+          <br />
+          
+          <hr />
+          {/* that ultimately deliver maximum benefit to the company and
+          scale a new high in my career. */}
+          {/* 
+          Full Stack Web Developer with good level of knowledge in web designing  and development, producting the Quality work. 
           I have a passion for coding and get most enjoyment from solving problems with writing elegant/maintainable code and sharing knowledge */}
+             {/* <Text fontSize="2.5rem" >
+              <Text color='coral'>EDUCATION </Text>
+            </Text>
+           <p>
+              <span>Dreamer</span> | <span>Learner</span> |
+              <span>Executor</span>
+            </p> */}
         <Type />
         </Text>
       </Flex>

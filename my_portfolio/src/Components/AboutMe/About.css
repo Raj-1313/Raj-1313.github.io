@@ -16,25 +16,13 @@
     margin: 25px;
 } */
 
-.name{
-    font-family: 800;
-    letter-spacing: 3px;
-    color: coral;
-}
-
-.about-title{
-    font-size: 2.5rem;
-    margin-left: -40px;
-}
 
 
 .about-image{
     width: 300px;
 }
 
-.details{
-    margin: 10px 25px;
-}
+
 
 /* .resume{
     margin-top: 25px;

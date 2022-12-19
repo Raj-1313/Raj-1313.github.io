@@ -18,7 +18,7 @@ const project = [{
   id:2,
   imageUrl: Zoomcar,
   imageAlt: 'Zoom Car',
-  techStack: ['HTML','CSS','JavaScript','Bootstrape' ],
+  techStack: ['HTML','CSS','JavaScript','Bootstrap' ],
   About: 'Rent car application with a very interactive UI and lots of things to learn while working. It provides customers their service at different modes , and allow to hire car and also on rent.',
   Title: 'ZOOM CAR',
   time: 'Completed in 5 Days',

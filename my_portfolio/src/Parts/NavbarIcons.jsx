@@ -7,6 +7,7 @@ const NavbarIcons = ({ props }) => {
   const { url, title ,id} = props;
   return (
     <>
+    
         <Link  to={id} spy={true}  smooth={true}>
       <MenuItem color='black' icon={url}>
         {title}

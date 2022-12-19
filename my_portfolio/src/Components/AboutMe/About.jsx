@@ -1,5 +1,5 @@
 import React from "react";
-import { Box,  Grid, Img } from "@chakra-ui/react";
+import { Box,  Grid, Img, Text } from "@chakra-ui/react";
 import "./About.css";
 const About = () => {
   return (
@@ -7,19 +7,39 @@ const About = () => {
          <Box  className="skillsHeader">
                 <h2>About</h2>
             </Box>
+
+    <Box p='4'
+    >
+     
+      <Text
+      w='80%'
+      textAlign={'left'}
+        color='rgb(161, 160, 153)'
+          lineHeight={{ base: "20px", sm: "23px", md: "24px", lg: "26px",xl:"35px" }}
+          fontSize={{ sm: "16px", md: "16px", lg: "18px",xl:"20px" }}
+        >
+         
+          Full Stack Web Developer with good level of knowledge in web designing  and development, producting the Quality work. 
+          I have a passion for coding and get most enjoyment from solving problems with writing elegant/maintainable code and sharing knowledge
+        
+        </Text>
+        
+    </Box>
+
+
         <Grid display="grid" gap='9' gridTemplateColumns={{sm:"repeat(1,1fr)" ,md:"repeat(2,1fr)" ,lg:'30% 65%' }}pt="40px">
 
 <Box mt={{lg:'20', md:'auto'}}>  
   <Img className="blob" src="https://thumbs.dreamstime.com/b/programmer-freelancer-business-person-sitting-working-alone-desk-vector-illustration-135388948.jpg" />    {/* https://miro.medium.com/max/1400/1*LEH5tUEQReWe8Iu-UEV3Pg.gif */}
 </Box>
 
-          <div className="details">
-             <h2 className="about-title">
-              <span className="name">EDUCATION </span>
-            </h2>
+          <Box m="10px 25px">
+             <Text fontSize="2.5rem" >
+              <Text color='coral'>EDUCATION </Text>
+            </Text>
            <p>
-              <span>Dreamer</span> | <span>Learner</span> |{" "}
-              <span>Adventurer</span>
+              <span>Dreamer</span> | <span>Learner</span> |
+              <span>Executor</span>
             </p>
             <hr />
            
@@ -34,7 +54,7 @@ const About = () => {
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Full Stack Web Development (Full Time)</h3>
-                                <span className="qualification__subtitle">Masai School.< br/> Bengaluru, Karnataka.</span>
+                                <span className="qualification__subtitle">Masai School< br/> Bengaluru, Karnataka</span>
                                 <div className="qualification__celendar">
                                     <i className="uil uil-calendar-alt"></i>
                                     2022 - Present
@@ -59,7 +79,7 @@ const About = () => {
 
                             <div>
                                 <h3 className="qualification__title"> B-Tech in Civil Engineering</h3>
-                                <span className="qualification__subtitle">Vedant college of engineering & technology </span>
+                                <span className="qualification__subtitle">Vedant college of engineering & technology < br/> Kota, Rajasthan.</span>
                                 <div className="qualification__celendar">
                                     <i className="uil uil-calendar-alt"></i>
                                     2017 - 2021
@@ -71,7 +91,7 @@ const About = () => {
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Higher Secondary Education</h3>
-                                <span className="qualification__subtitle">Maharishi Sr. Sec School</span>
+                                <span className="qualification__subtitle">Maharishi Sr. Sec School< br/> Kota, Rajasthan.</span>
                                 <div className="qualification__celendar">
                                     <i className="uil uil-calendar-alt"></i>
                                     2016 - 2017
@@ -91,36 +111,9 @@ const About = () => {
                  
                 </div>
                 </Box>
-          </div>
+          </Box>
 
-{/* section 3 */}
-          {/* <Box> 
-         <h2 className="about-title">
-              About <span className="name">SELF </span>
-            </h2>
-            <table className="title">
-              <tr>
-                <th>Name:</th>
-                <td>RAJ RATHOR</td>
-              </tr>
-              <tr>
-                <th>Birthdate:</th>
-                <td>+91 9784070693</td>
-              </tr>
-              <tr>
-                <th>Email:</th>
-                <td>raj1rathore.1@gmail.com</td>
-              </tr>
-              <tr>
-                <th>District:</th>
-                <td>KOTA</td>
-              </tr>
-              <tr>
-                <th>Hobby:</th>
-                <td>WEB DEVELOPMENT & TRAVELLING</td>
-              </tr>
-            </table>
-        </Box>  */}
+       
         </Grid>
       
     </Box>

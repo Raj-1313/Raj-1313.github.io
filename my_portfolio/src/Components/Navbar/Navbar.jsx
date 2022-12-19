@@ -13,6 +13,7 @@ import {
   Wrap,
   WrapItem,
   Avatar,
+  Tooltip,
 } from "@chakra-ui/react";
 import NavbarIcons, { NavbarIcons1 } from "../../Parts/NavbarIcons";
 import {
@@ -126,13 +127,16 @@ export default function Home() {
           className="n-signature"
           zIndex="3"
         >
-          <Wrap>
+          <Wrap as='a' href="https://drive.google.com/file/d/1wucaOltUjDlKKx7y820FAH1PrdRJtURQ/view?usp=sharing" target="_blank">
+          <Tooltip label='Preview Resume'  onClick={()=>console.log("re")}>
+    
             <WrapItem>
               <Avatar
                 name="RAJ RATHOR"
                 src="https://static.vecteezy.com/system/resources/thumbnails/013/062/986/small/glasses-logo-design-spectacles-icon-design-template-free-vector.jpg"
-              />
+                />
             </WrapItem>
+                </Tooltip>
           </Wrap>
         </Box>
 

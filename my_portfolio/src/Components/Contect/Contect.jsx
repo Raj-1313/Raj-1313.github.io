@@ -17,6 +17,8 @@ const handleSubmit=(e) => {
 let objData={
   senderemail,thoughts
 }
+setthoughts("")
+setSenderEmail("")
 console.log(objData)
 }
   return (
@@ -48,8 +50,9 @@ console.log(objData)
 {/* text Area */}
 
           <form onSubmit={handleSubmit}>
-<Input type='email' placeholder="May I know your Email...."  onChange={({target})=>setSenderEmail(target.value)} ></Input>
+<Input type='email' value={senderemail} placeholder="May I know your Email...."  onChange={({target})=>setSenderEmail(target.value)} ></Input>
             <Textarea
+            value={thoughts}
             resize='none'
             onChange={({target})=>setthoughts(target.value)}
             focusBorderColor='yellow.400'
@@ -103,3 +106,30 @@ export default Contect;
 {
   /* <span><TbActivityHeartbeat color='red'/> <RiHeart2Fill  color='red'/><TbActivityHeartbeat /></span> */
 }
+{/* <Box> 
+<h2 className="about-title">
+     About <span className="name">SELF </span>
+   </h2>
+   <table className="title">
+     <tr>
+       <th>Name:</th>
+       <td>RAJ RATHOR</td>
+     </tr>
+     <tr>
+       <th>Birthdate:</th>
+       <td>+91 9784070693</td>
+     </tr>
+     <tr>
+       <th>Email:</th>
+       <td>raj1rathore.1@gmail.com</td>
+     </tr>
+     <tr>
+       <th>District:</th>
+       <td>KOTA</td>
+     </tr>
+     <tr>
+       <th>Hobby:</th>
+       <td>WEB DEVELOPMENT & TRAVELLING</td>
+     </tr>
+   </table>
+</Box>   */}
