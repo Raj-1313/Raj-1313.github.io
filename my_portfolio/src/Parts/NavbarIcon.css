@@ -9,7 +9,7 @@
     border: 1px solid rgb(90, 92, 4);
     border-radius:12px;
     color:#fdc50f;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .md_n_text:hover:nth-child(1){
     color :rgb(247, 65, 65)    
@@ -25,7 +25,7 @@
   
 }
 .md_n_text:nth-child(7):hover{
-    color:#fd0f0f;
+    color:rgb(255, 255, 255);
     background-color: rgb(150, 241, 241);
 }
 

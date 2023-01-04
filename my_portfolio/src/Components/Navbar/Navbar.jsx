@@ -5,7 +5,6 @@ import {
   Text,
   Box,
   Show,
-  Hide,
   MenuButton,
   MenuList,
   IconButton,
@@ -128,8 +127,7 @@ export default function Home() {
           zIndex="3"
         >
           <Wrap as='a' href="https://drive.google.com/file/d/1wucaOltUjDlKKx7y820FAH1PrdRJtURQ/view?usp=sharing" target="_blank">
-          <Tooltip label='Preview Resume'  onClick={()=>console.log("re")}>
-    
+          <Tooltip label='Preview Resume'>    
             <WrapItem>
               <Avatar
                 name="RAJ RATHOR"
@@ -155,23 +153,26 @@ export default function Home() {
                   props={{ id: ele.id, url: ele.url, title: ele.title }}
                 />)
               )}
+               <Tooltip label='Download Resume' placement='right-end' closeDelay={500} hasArrow bg='#fdc50f' color="black">
+
               <Box
                 as="a"
-href='https://drive.google.com/u/0/uc?id=1wucaOltUjDlKKx7y820FAH1PrdRJtURQ&export=download'
+                href='https://drive.google.com/u/0/uc?id=1wucaOltUjDlKKx7y820FAH1PrdRJtURQ&export=download'
                 fontSize={{ base: "xs", sm: "sm", md: "md", lg: "md" }}
                 className="md_n_text"
                 w='150px'
-              >
+                >
                 Resume 
                  <Box as="Button" p="1">
                  <HiOutlineDownload  />
                  </Box>
+              </Box>
+                </Tooltip>
                
                
            
 
 
-              </Box>
             </Flex>
           </Box>
         </Box>

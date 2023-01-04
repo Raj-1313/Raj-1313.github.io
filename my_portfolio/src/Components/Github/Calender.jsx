@@ -7,15 +7,15 @@ function Github() {
   const selectLastHalfYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
-    const shownMonths = 8;
+    const shownMonths = 7;
 
     return contributions.filter((day) => {
       const date = new Date(day.date);
       const monthOfDay = date.getMonth();
 
       return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
+        date.getFullYear() === currentYear ||
+        monthOfDay > currentMonth - shownMonths ||
         monthOfDay <= currentMonth
       );
     });
@@ -33,16 +33,19 @@ function Github() {
      
       <Flex  flexDir='column' align='center' mt='10'>
 
-        <Box borderLeft='3px solid ' padding='4' >
+        <Box padding='4' >
           <motion.div
+          
           initial={{x:'400px',opacity:0}} 
           animate={{x:'0',opacity:1}} 
           transition={{delay:'0.2',duration:'1.5'}}
           >
 
-        <GitHubCalendar
+        <GitHubCalendar        
           username="Raj-1313"
-          transformData={selectLastHalfYear}          
+          transformData={selectLastHalfYear}    
+          width="90vw"      
+        
           />
           </motion.div>
           </Box>
@@ -52,6 +55,7 @@ function Github() {
          p='5'
         m="16"
         gap={{ base: "3", md: "10" }}
+        width={{base:"100%",md:"auto"}}
         gridTemplateColumns={{ base: "1fr", lg: "repeat(3,1fr)" }}
       >
         

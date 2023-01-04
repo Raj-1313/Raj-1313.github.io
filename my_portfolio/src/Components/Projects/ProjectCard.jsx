@@ -61,7 +61,7 @@ const ProjectCard = ({ project }) => {
         >
           {techStack.map((tag, index) => {
             return (
-              <Box>
+              <Box key={index}>
                 <Badge variant="subtle" colorScheme="yellow">
                   {tag}
                 </Badge>

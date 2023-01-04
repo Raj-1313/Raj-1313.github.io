@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid,  Img,  Text } from "@chakra-ui/react";
+import { Box,  Flex, Grid,  Img,  Text } from "@chakra-ui/react";
 import React from "react";
 import Type from "../../Parts/type";
 import { TypeDot } from "../../Parts/type";

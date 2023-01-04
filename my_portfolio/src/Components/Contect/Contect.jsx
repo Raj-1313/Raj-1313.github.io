@@ -1,4 +1,4 @@
-import { Box, Button,  Grid, Img, Input, Text, Textarea } from "@chakra-ui/react";
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, Button,  Grid, Img, Input, Text, Textarea, Tooltip } from "@chakra-ui/react";
 import "./Contacts.css";
 import React from "react";
 import "./Contacts.css";
@@ -11,15 +11,18 @@ import { useState } from "react";
 const Contect = () => {
 const [thoughts,setthoughts]=useState('')
 const [senderemail,setSenderEmail]=useState('')
+const [alerting,setAlert]=useState(false)
 
 const handleSubmit=(e) => {
   e.preventDefault()
 let objData={
   senderemail,thoughts
 }
+// if(senderemail && thoughts){
+//  setAlert(true)
+// }
 setthoughts("")
 setSenderEmail("")
-console.log(objData)
 }
   return (
     <Box id="contect" mt={{base: "70px",lg:'2' }}  background='#292721aa' borderTopRadius='30'>
@@ -33,15 +36,16 @@ console.log(objData)
               <Text fontSize='xl' className="button-85" >Let's Work Together</Text>
 
               <Grid templateColumns={{base:"repeat(2,1fr)",md:"repeat(3,1fr)"}}   gap='10' mt='20px' mb='20px' >
-          {socialMediaLinks.map((details) => (
-          
+          {socialMediaLinks.map((details) => (            
             <Box as='a'  href={details.link} target="_blank"  key={details.id}  fontSize='20px'
             //  alignContent='center' 
             w='30%' m='auto'
-             >     
+            >     
+            <Tooltip label={details.contact_info} placement='right-end'>
         <Box
          w='30px' h='30px' p='16px' 
          className='button-86'>{details.fontAwesomeIcon}</Box>                
+         </Tooltip>
             </Box>
           ))}
         </Grid>
@@ -97,6 +101,30 @@ console.log(objData)
         </Box>
       </Box>
 {/* Footer Section */}
+
+
+{/* //want  to implement alert when some one click on send button     04/01/2022 */}
+
+
+{/* {
+  alerting && <Alert
+   status='success'
+   variant='subtle'
+   flexDirection='column'
+   alignItems='center'
+   justifyContent='center'
+   textAlign='center'
+   height='200px'
+ >
+   <AlertIcon boxSize='40px' mr={0} />
+   <AlertTitle mt={4} mb={1} fontSize='lg'>
+     Application submitted!
+   </AlertTitle>
+   <AlertDescription maxWidth='sm'>
+     Thanks for Connecting, I will get back to you soon.
+   </AlertDescription>
+ </Alert>
+} */}
 
     </Box>
   );

@@ -9,7 +9,7 @@ import redux from "../../img/skills/redux.svg";
 import nodejs from "../../img/skills/nodejs.svg";
 import typescript from "../../img/skills/typescript.svg";
 import bootstrap from "../../img/skills/bootstrap.svg";
-import mongodb from "../../img/skills/mongodb.svg";
+import mongodb from "../../img/skills/mongoDB.svg";
 import git from "../../img/skills/git.svg";
 import canva from "../../img/skills/canva.svg";
 
