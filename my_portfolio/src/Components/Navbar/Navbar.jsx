@@ -25,6 +25,7 @@ import {
 } from "@chakra-ui/icons";
 import "./Navbar.css";
 import {HiOutlineDownload} from 'react-icons/hi'
+import {GrFormView} from 'react-icons/gr'
 
 
 export default function Home() {
@@ -153,14 +154,15 @@ export default function Home() {
                   props={{ id: ele.id, url: ele.url, title: ele.title }}
                 />)
               )}
-               <Tooltip label='Download Resume' placement='right-end' closeDelay={500} hasArrow bg='#fdc50f' color="black">
 
+               <Tooltip label='Download/Preview Resume' placement='right-end' closeDelay={500} hasArrow bg='#fdc50f' color="black">
               <Box
                 as="a"
                 href='https://drive.google.com/u/0/uc?id=1wucaOltUjDlKKx7y820FAH1PrdRJtURQ&export=download'
                 fontSize={{ base: "xs", sm: "sm", md: "md", lg: "md" }}
                 className="md_n_text"
-                w='150px'
+                w='150px'   
+                onClick={()=>window.open("https://drive.google.com/file/d/1wucaOltUjDlKKx7y820FAH1PrdRJtURQ/view?usp=sharing")}
                 >
                 Resume 
                  <Box as="Button" p="1">
@@ -168,7 +170,7 @@ export default function Home() {
                  </Box>
               </Box>
                 </Tooltip>
-               
+             
                
            
 
