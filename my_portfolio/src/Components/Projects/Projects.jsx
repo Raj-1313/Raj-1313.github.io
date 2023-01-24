@@ -6,16 +6,28 @@ import { ReactIcon } from 'react-webtech-animated-icons';
 import ProjectCard from './ProjectCard';
 import Zoomcar from "../../img/Zoomcar.png";
 import airgarage from "../../img/airgarage.png";
-import Sendinlue from "../../img/Sendinlue.png";
+// import Sendinlue from "../../img/Sendinlue.png";
 const Projects = () => {
 
   let linearColor =
   // 'linear-gradient(to left, #cb910e, #d3a207, #dab401, #e0c600, #e3d904)';
   'linear-gradient( to bottom, #331992, #3326a2, #3233b3, #2e3fc4, #274bd5, #165cdf, #026ce8, #007cef, #008ee9, #009ad6, #00a3be, #30a8a8 )';
 
-const project = [{
-
-  id:2,
+const project = [
+  {
+    id:1,
+    imageUrl: 'https://i.ibb.co/n1yS2B2/home.png',
+    imageAlt: 'Vintage Attire',
+    techStack: [ "JavaScript", "HTML" ,"CSS", "React" , "Chakra UI","Node","MongoDb","Express" ],
+    About: 'TVA(the vintage attire) is an ecommerce app where you can shop for men, women, kids for home accessories.',
+    Title: 'Vintage Arrire',
+    time: 'Completed in 6 Days',
+    projectType: 'Group (Lead)',
+    gitlink: 'https://github.com/Raj-1313/The-Vintage-Attire',
+    deploy: 'https://vintageattrie.netlify.app',
+    month:"2 month",
+  },{
+  id:3,
   imageUrl: Zoomcar,
   imageAlt: 'Zoom Car',
   techStack: ['HTML','CSS','JavaScript','Bootstrap' ],
@@ -25,23 +37,23 @@ const project = [{
   projectType: 'Group',
   gitlink: 'https://github.com/zuhedshaikh95/low-head-7683',
   deploy: 'https://magical-kashata-a20ef2.netlify.app',
-  month:"2 month",
+  month:"5 month",
 },
+// {
+//   id:5,
+//   imageUrl:Sendinlue,
+//   imageAlt: 'SendinBlue',
+//   techStack: ["JavaScript", "Bootstrap", "HTML" ,"CSS"  ],
+//   About: 'Sendinblue is the smartest and most intuitive platform for growing businesses and empowering B2B and B2C businesses, ecommerce sellers and agencies to build customer relationships.',
+//   Title: 'SENDINBLUE',
+//   time: 'Completed in 5 Days',
+//   projectType: 'Individual',
+//   gitlink: 'https://github.com/Raj-1313/ossified_church_1296',
+//   deploy: 'https://boisterous-malabi-45100c.netlify.app',
+//   month:"6 month",
+// },
 {
-  id:3,
-  imageUrl:Sendinlue,
-  imageAlt: 'SendinBlue',
-  techStack: ["JavaScript", "Bootstrap", "HTML" ,"CSS"  ],
-  About: 'Sendinblue is the smartest and most intuitive platform for growing businesses and empowering B2B and B2C businesses, ecommerce sellers and agencies to build customer relationships.',
-  Title: 'SENDINBLUE',
-  time: 'Completed in 5 Days',
-  projectType: 'Individual',
-  gitlink: 'https://github.com/Raj-1313/ossified_church_1296',
-  deploy: 'https://boisterous-malabi-45100c.netlify.app',
-  month:"3 month",
-},
-{
-  id:1,
+  id:4,
   imageUrl: airgarage,
   imageAlt: 'AirGarage',
   techStack: [ "JavaScript", "HTML" ,"CSS", "React" , "Chakra UI" ],
@@ -51,7 +63,21 @@ const project = [{
   projectType: 'Individual',
   gitlink: 'https://github.com/Raj-1313/Raj-1313--slow-argument-2201/tree/main/my-app',
   deploy: 'https://my-app-nu-indol.vercel.app',
-  month:"1 month",
+  month:"4 month",
+},
+
+{
+  id:2,
+  imageUrl: 'https://user-images.githubusercontent.com/86112788/201525927-fd99c566-1e52-43f0-b948-50f27f912852.PNG',
+  imageAlt: 'Fitify',
+  techStack: [ "JavaScript", "HTML" ,"CSS", "React" , "Chakra UI","Node","MongoDb","Express" ],
+  About: 'FITIFY.com is a fitness website of daily food healthy & tasty, mental fitness easy with yoga & meditation, and medical & lifestyle care hassle-free.',
+  Title: 'Fitify',
+  time: 'Completed in 5 Days',
+  projectType: 'Group',
+  gitlink: 'https://github.com/Pragati946/bouncy-donkey-4696',
+  deploy: 'https://fitify-lac.vercel.app/',
+  month:"3 month",
 }
 ]
  
@@ -68,7 +94,7 @@ return (
           key={project.id}
           // className="vertical-timeline-element--project"
           contentStyle={{
-            background: 'white',
+            // background: 'white',
             padding:'0px',
             background:'linear-gradient(to bottom, rgba(102,102,102,1) 0%, rgba(18,18,18,1) 0%, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 0%, rgba(77,77,77,1) 0%, rgba(28,28,28,1) 0%, rgba(43,43,43,1) 60%, rgba(187,195,70,1) 100%',
             color: '#fff',

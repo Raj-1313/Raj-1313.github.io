@@ -56,7 +56,7 @@ export default function Home() {
     },
     {
       url: <PhoneIcon />,
-      title: "Contect",
+      title: "Contact",
       id: "contect",
     },
     // {
