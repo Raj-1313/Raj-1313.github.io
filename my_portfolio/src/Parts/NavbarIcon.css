@@ -1,15 +1,14 @@
 .md_n_text{
     margin: 10px;
     position: static;
-    padding: 10px;
+    padding: 8px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .md_n_text:hover{
-    border: 1px solid rgb(90, 92, 4);
+    border: .5px solid rgb(90, 92, 4);
     border-radius:12px;
     color:#fdc50f;
-    font-size: 1.1rem;
 }
 .md_n_text:hover:nth-child(1){
     color :rgb(247, 65, 65)    

@@ -1,4 +1,4 @@
-import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, Button,  Grid, Img, Input, Text, Textarea, Tooltip } from "@chakra-ui/react";
+import {  Box, Button,  Grid, Img, Input, Text, Textarea,  Tooltip, useToast } from "@chakra-ui/react";
 import "./Contacts.css";
 import React from "react";
 import "./Contacts.css";
@@ -6,23 +6,53 @@ import wave from "../../img/wave.png";
 import { socialMediaLinks } from "./Portfolio";
 import { RiHeart2Fill, RiSendPlaneFill } from "react-icons/ri";
 import { useState } from "react";
+import axios from "axios";
 
 
 const Contect = () => {
-const [thoughts,setthoughts]=useState('')
-const [senderemail,setSenderEmail]=useState('')
-const [alerting,setAlert]=useState(false)
+const [description,setthoughts]=useState('')
+const [name,setName]=useState('')
+const [email,setSenderEmail]=useState('')
+const toast= useToast();
 
-const handleSubmit=(e) => {
+const handleSubmit=async(e) => {
   e.preventDefault()
-let objData={
-  senderemail,thoughts
-}
+  if(email.includes("@gmail.com") && name!==""&& description!==""){
+
+    let objData={
+      email,description,name
+    }
+    console.log(objData)
+    try{
+
+      await axios.post('https://shy-lime-bass-cap.cyclic.app/posts/post')
+      toast({
+        title: `I Got Your Message.... `,
+        status: "success",
+        isClosable: true,
+      })
+      setthoughts("")
+       setName("")
+      setSenderEmail("")
+    }
+    catch(err){
+      toast({
+        title: `Data Not Sent`,
+        status: "warning",
+        isClosable: true,
+      })
+    }
+  }else{
+    toast({
+      title: `Information may contain flaws or empty data`,
+      status: "info",
+      isClosable: true,
+    })
+  }
 // if(senderemail && thoughts){
 //  setAlert(true)
 // }
-setthoughts("")
-setSenderEmail("")
+
 }
   return (
     <Box id="contect" mt={{base: "70px",lg:'2' }}  background='#292721aa' borderTopRadius='30'>
@@ -54,9 +84,10 @@ setSenderEmail("")
 {/* text Area */}
 
           <form onSubmit={handleSubmit}>
-<Input type='email' value={senderemail} placeholder="May I know your Email...."  onChange={({target})=>setSenderEmail(target.value)} ></Input>
+<Input type='email' value={email} placeholder="May I know your Email...."  onChange={({target})=>setSenderEmail(target.value)} />
+<Input type='text' value={name} placeholder="May I know your Name...."  onChange={({target})=>setName(target.value)} />
             <Textarea
-            value={thoughts}
+            value={description}
             resize='none'
             onChange={({target})=>setthoughts(target.value)}
             focusBorderColor='yellow.400'
@@ -100,64 +131,10 @@ setSenderEmail("")
           <Img zIndex="-12" src={wave}></Img>
         </Box>
       </Box>
-{/* Footer Section */}
 
-
-{/* //want  to implement alert when some one click on send button     04/01/2022 */}
-
-
-{/* {
-  alerting && <Alert
-   status='success'
-   variant='subtle'
-   flexDirection='column'
-   alignItems='center'
-   justifyContent='center'
-   textAlign='center'
-   height='200px'
- >
-   <AlertIcon boxSize='40px' mr={0} />
-   <AlertTitle mt={4} mb={1} fontSize='lg'>
-     Application submitted!
-   </AlertTitle>
-   <AlertDescription maxWidth='sm'>
-     Thanks for Connecting, I will get back to you soon.
-   </AlertDescription>
- </Alert>
-} */}
 
     </Box>
   );
 };
 
 export default Contect;
-{
-  /* <span><TbActivityHeartbeat color='red'/> <RiHeart2Fill  color='red'/><TbActivityHeartbeat /></span> */
-}
-{/* <Box> 
-<h2 className="about-title">
-     About <span className="name">SELF </span>
-   </h2>
-   <table className="title">
-     <tr>
-       <th>Name:</th>
-       <td>RAJ RATHOR</td>
-     </tr>
-     <tr>
-       <th>Birthdate:</th>
-       <td>+91 9784070693</td>
-     </tr>
-     <tr>
-       <th>Email:</th>
-       <td>raj1rathore.1@gmail.com</td>
-     </tr>
-     <tr>
-       <th>District:</th>
-       <td>KOTA</td>
-     </tr>
-     <tr>
-       <th>Hobby:</th>
-       <td>WEB DEVELOPMENT & TRAVELLING</td>
-     </tr>
-   </table>
-</Box>   */}
