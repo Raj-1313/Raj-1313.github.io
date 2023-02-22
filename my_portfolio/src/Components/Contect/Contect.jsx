@@ -22,10 +22,9 @@ const handleSubmit=async(e) => {
     let objData={
       email,description,name
     }
-    console.log(objData)
+    
     try{
-
-      await axios.post('https://shy-lime-bass-cap.cyclic.app/posts/post')
+      await axios.post('https://shy-lime-bass-cap.cyclic.app/posts/post',objData)
       toast({
         title: `I Got Your Message.... `,
         status: "success",
