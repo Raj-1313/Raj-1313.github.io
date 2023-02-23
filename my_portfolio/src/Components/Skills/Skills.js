@@ -12,15 +12,16 @@ function Skills() {
    'CSS',
    'React',  
    "typescript",
-   "express", 
+   "redux",
 ]
- const skillsData1 = [     
-   'mongodb',   
-   'canva',
+const skillsData1 = [     
+    'mongodb',   
+    "express", 
+//    'canva',
    "bootstrap",
    "nodejs",
    "chakra",
-   "git"
+//    "git"
 ]
 
 
@@ -70,7 +71,7 @@ function Skills() {
                             <div className="skill--box" key={id} style={skillBoxStyle}>
                                 <img src={skillsImage(skill)} alt={skill} />
                                 <h3 
-                                
+                                style={{color: '#212121'}}
                                 >
                                     {skill}
                                 </h3>

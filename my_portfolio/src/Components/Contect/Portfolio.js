@@ -2,6 +2,7 @@ import { FaHackerrank} from "react-icons/fa";
 import {MdMarkEmailRead} from "react-icons/md";
 import {ImPhoneHangUp,ImLocation} from "react-icons/im"
 import {BsGithub} from "react-icons/bs"
+import {AiFillLinkedin} from "react-icons/ai"
 
 export const socialMediaLinks = [
    
@@ -43,6 +44,14 @@ export const socialMediaLinks = [
       contact_info: "raj-hacker/1313",
       link: "https://www.hackerrank.com/theromeo_1313",
       fontAwesomeIcon: <FaHackerrank/>, // Reference https://fontawesome.com/icons/github?style=brands
+      backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    },
+    {
+      id:5,
+      name: "Linkedin",
+      contact_info: "rajrathor1313/linkedin",
+      link: "https://www.linkedin.com/in/rajrathore1313/",
+      fontAwesomeIcon: <AiFillLinkedin/>, // Reference https://fontawesome.com/icons/github?style=brands
       backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
     },
  

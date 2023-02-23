@@ -19,8 +19,8 @@ const About = () => {
           fontSize={{ sm: "16px", md: "16px", lg: "18px",xl:"20px" }}
         >
          
-          Full Stack Web Developer with good level of knowledge in web designing  and development, producting the Quality work. 
-          I have a passion for coding and get most enjoyment from solving problems with writing elegant/maintainable code and sharing knowledge
+          Full Stack Web Developer with good knowledge in web designing and development, creating Quality projects. 
+          Having passion for coding and get most enjoyment from solving problems with writing elegant/maintainable code and sharing knowledge
         
         </Text>
         
