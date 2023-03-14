@@ -85,8 +85,9 @@ const HomePage = () => {
             className="profileimg"
             src={portfolioImg}              
                p='4'
-            alignItems="center"
+             alignItems="center"
             alt="no img"   objectFit='cover' 
+          maxW='85%'
             />
             </motion.div>
         </Box>

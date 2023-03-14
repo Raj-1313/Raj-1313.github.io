@@ -109,8 +109,9 @@ export default function Home() {
               _focus={{ boxShadow: "outline" }}
             />
             <MenuList bg="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)">
-              {data.map((ele) => (
+              {data.map((ele,ind) => (
                 <NavbarIcons
+                key={ind}
                   props={{ url: ele.url, title: ele.title, id: ele.id }}
                 />
               ))}
