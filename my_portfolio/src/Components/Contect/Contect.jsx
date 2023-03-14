@@ -95,7 +95,7 @@ const handleSubmit=async(e) => {
               required=""
               size='lg'
             />
-            <Button  type="submit" className="button-53">
+            <Button w='100px'  type="submit" className="button-53">
              <RiSendPlaneFill/>
             </Button>
           </form>

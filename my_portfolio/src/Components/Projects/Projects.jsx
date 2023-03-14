@@ -15,6 +15,19 @@ const Projects = () => {
 
 const project = [
   {
+    id:6,
+    imageUrl: 'https://user-images.githubusercontent.com/107465630/214306318-0d37191d-645e-4ea9-a9a2-04211f06ec46.png',
+    imageAlt: 'Vintage Attire',
+    techStack: [ "JavaScript", "HTML" ,"CSS", "React" , "Chakra UI","Node","MongoDb","Express","RazorPay" ],
+    About: 'The TechWorld is an details oriented website that allows people to make decision before buying electronic goods and services.',
+    Title: 'Tech World',
+    time: 'Completed in 6 Days',
+    projectType: 'Group (Lead)',
+    gitlink: 'https://github.com/Raj-1313/TechWorld',
+    deploy: 'https://techworld-tau.vercel.app/',
+    month:"1 month",
+  },
+  {
     id:1,
     imageUrl: 'https://i.ibb.co/n1yS2B2/home.png',
     imageAlt: 'Vintage Attire',
@@ -25,7 +38,7 @@ const project = [
     projectType: 'Group (Lead)',
     gitlink: 'https://github.com/Raj-1313/The-Vintage-Attire',
     deploy: 'https://vintageattrie.netlify.app',
-    month:"2 month",
+    month:"3 month",
   },{
   id:3,
   imageUrl: Zoomcar,
@@ -37,7 +50,7 @@ const project = [
   projectType: 'Group',
   gitlink: 'https://github.com/zuhedshaikh95/low-head-7683',
   deploy: 'https://magical-kashata-a20ef2.netlify.app',
-  month:"5 month",
+  month:"6 month",
 },
 // {
 //   id:5,
@@ -50,7 +63,7 @@ const project = [
 //   projectType: 'Individual',
 //   gitlink: 'https://github.com/Raj-1313/ossified_church_1296',
 //   deploy: 'https://boisterous-malabi-45100c.netlify.app',
-//   month:"6 month",
+//   month:"7 month",
 // },
 {
   id:4,
@@ -63,7 +76,7 @@ const project = [
   projectType: 'Individual',
   gitlink: 'https://github.com/Raj-1313/Raj-1313--slow-argument-2201/tree/main/my-app',
   deploy: 'https://my-app-nu-indol.vercel.app',
-  month:"4 month",
+  month:"5 month",
 },
 
 {
@@ -77,7 +90,7 @@ const project = [
   projectType: 'Group',
   gitlink: 'https://github.com/Pragati946/bouncy-donkey-4696',
   deploy: 'https://fitify-lac.vercel.app/',
-  month:"3 month",
+  month:"4 month",
 }
 ]
  
