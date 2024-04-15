@@ -12,15 +12,19 @@ const About = () => {
     >
      
       <Text
-      w='80%'
+      w='90%'
       textAlign={'left'}
         color='rgb(161, 160, 153)'
           lineHeight={{ base: "20px", sm: "23px", md: "24px", lg: "26px",xl:"35px" }}
           fontSize={{ sm: "16px", md: "16px", lg: "18px",xl:"20px" }}
         >
-         
-          Full Stack Web Developer with good knowledge in web designing and development, creating Quality projects. 
-          Having passion for coding and get most enjoyment from solving problems with writing elegant/maintainable code and sharing knowledge
+         Hey there! 👋 I'm Raj, an SDE1 specializing in front-end development at Zinier. My passion lies in crafting intuitive user interfaces that not only look great but also deliver seamless experiences. At Zinier, I'm deeply involved in creating dynamic dashboards leveraging QuickSight, empowering users with actionable insights at their fingertips.
+
+With a focus on performance optimization, I thrive on the challenge of enhancing efficiency without compromising functionality. I believe in the power of data visualization to drive informed decision-making, and my work at Zinier reflects this dedication to empowering users through accessible, high-performance tools.
+
+When I'm not coding, you can find me exploring new technologies, experimenting with design patterns, or simply enjoying a good cup of coffee while brainstorming my next project. Let's connect and collaborate to build something incredible together!
+          {/* Full Stack Web Developer with good knowledge in web designing and development, creating Quality projects. 
+          Having passion for coding and get most enjoyment from solving problems with writing elegant/maintainable code and sharing knowledge */}
         
         </Text>
         
@@ -50,6 +54,24 @@ const About = () => {
   
                     {/* <!--==================== QUALIFICATION CONTENT 1 ====================--> */}
                     <div className="qualification__content qualification__active" data-content id="education">
+                    <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <div className="qualification__rounder"></div>
+                                <div className="qualification__line"></div>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title">Software Developer (SDE1)</h3>
+                                <span className="qualification__subtitle">Zinier Pvt technologies < br/>Namma Bengaluru, Karnataka</span>
+                                <div className="qualification__celendar">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2023 - 2024
+                                </div>
+                            </div>
+                        </div>
+                  
                         {/* <!--==================== QUALIFICATION 1 ====================--> */}
                         <div className="qualification__data">
                             <div>
@@ -57,7 +79,7 @@ const About = () => {
                                 <span className="qualification__subtitle">Masai School< br/> Bengaluru, Karnataka</span>
                                 <div className="qualification__celendar">
                                     <i className="uil uil-calendar-alt"></i>
-                                    2022 - Present
+                                    2022 - 2023
                                 </div>
                             </div>
 
