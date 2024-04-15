@@ -36,7 +36,7 @@ const handleSubmit=async(e) => {
     }
     catch(err){
       toast({
-        title: `Data Not Sent`,
+        title: `Service Closed right now`,
         status: "warning",
         isClosable: true,
       })
