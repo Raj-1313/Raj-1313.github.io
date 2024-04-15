@@ -47,10 +47,12 @@ const HomePage = () => {
           lineHeight={{ base: "20px", sm: "23px", md: "24px", lg: "26px",xl:"35px" }}
           fontSize={{ sm: "16px", md: "16px", lg: "18px",xl:"20px" }}
         >
-          Looking for a suitable work opportunity,
+
+Front-end developer @Zinier. My passion lies in crafting intuitive user interfaces that not only look great but also deliver seamless experiences. At Zinier, I'm deeply involved in creating dynamic dashboards leveraging QuickSight, empowering users with actionable insights at their fingertips. Also enjoying free-style coading (i.e. tooo much of experimentation)
+          {/* Looking for a suitable work opportunity,
           preferably in an IT company, which renders a challenging career,
           providing the opportunities to enhance my educational and technical
-          skills 
+          skills  */}
           <br />
           <br />
           

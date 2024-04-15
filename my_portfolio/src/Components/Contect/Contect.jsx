@@ -122,7 +122,7 @@ const handleSubmit=async(e) => {
             </Box>
             
             <Box as="Button" p="1"  fontFamily="Kalam" fontWeight='bold' fontSize='1.4rem' >
-            by RAJ RATHOR
+            by RAJ  
             </Box>
           </Text>
 

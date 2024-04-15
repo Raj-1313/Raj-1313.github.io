@@ -18,8 +18,6 @@ const About = () => {
           lineHeight={{ base: "20px", sm: "23px", md: "24px", lg: "26px",xl:"35px" }}
           fontSize={{ sm: "16px", md: "16px", lg: "18px",xl:"20px" }}
         >
-         Hey there! 👋 I'm Raj, an SDE1 specializing in front-end development at Zinier. My passion lies in crafting intuitive user interfaces that not only look great but also deliver seamless experiences. At Zinier, I'm deeply involved in creating dynamic dashboards leveraging QuickSight, empowering users with actionable insights at their fingertips.
-
 With a focus on performance optimization, I thrive on the challenge of enhancing efficiency without compromising functionality. I believe in the power of data visualization to drive informed decision-making, and my work at Zinier reflects this dedication to empowering users through accessible, high-performance tools.
 
 When I'm not coding, you can find me exploring new technologies, experimenting with design patterns, or simply enjoying a good cup of coffee while brainstorming my next project. Let's connect and collaborate to build something incredible together!
@@ -42,8 +40,7 @@ When I'm not coding, you can find me exploring new technologies, experimenting w
               <Text color='coral'>EDUCATION </Text>
             </Text>
            <p>
-              <span>Dreamer</span> | <span>Learner</span> |
-              <span>Executor</span>
+              <span>Dreamer</span> | <span>Learner</span> |  <span> Executor</span>
             </p>
             <hr />
            
