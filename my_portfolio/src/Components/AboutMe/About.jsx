@@ -47,8 +47,6 @@ When I'm not coding, you can find me exploring new technologies, experimenting w
             </p>
             <hr />
            
-          
-            
 
   <Box className="qualification__sections" mt='10' >
   
