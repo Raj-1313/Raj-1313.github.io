@@ -7,7 +7,7 @@ import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Projects/Projects";
 import { Box, Grid } from "@chakra-ui/react";
 import Calender from "./Components/Github/Calender";
-import Feedbacks from "./Components/Feedbacks/feedbacks";
+// import Feedbacks from "./Components/Feedbacks/feedbacks";
 
 function App() {
   return (
@@ -25,7 +25,6 @@ function App() {
           <Navbar />
         </Box>
         <Box className="container">
-          <Feedbacks />
           <HomePage />
           <About />
           <Skills />
