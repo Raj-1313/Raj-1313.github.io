@@ -62,7 +62,7 @@ When I'm not coding, you can find me exploring new technologies, experimenting w
                                 <span className="qualification__subtitle">Zinier Pvt technologies < br/>Namma Bengaluru, Karnataka</span>
                                 <div className="qualification__celendar">
                                     <i className="uil uil-calendar-alt"></i>
-                                    2023 - 2024
+                                    2023 - Present
                                 </div>
                             </div>
                         </div>

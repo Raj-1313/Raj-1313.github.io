@@ -128,7 +128,7 @@ export default function Home() {
           className="n-signature"
           zIndex="3"
         >
-          <Wrap as='a' href="https://drive.google.com/file/d/1wucaOltUjDlKKx7y820FAH1PrdRJtURQ/view?usp=sharing" target="_blank">
+          <Wrap as='a' href="https://drive.google.com/file/d/1QYKJjTZ5UqEIgzYvh_Ge17g-9iuJvRK_/view?usp=drive_link" target="_blank">
           <Tooltip label='Preview Resume'>    
             <WrapItem>
               <Avatar
@@ -159,11 +159,11 @@ export default function Home() {
                <Tooltip label='Download/Preview Resume' placement='right-end' closeDelay={500} hasArrow bg='#fdc50f' color="black">
               <Box
                 as="a"
-                href='https://drive.google.com/u/0/uc?id=1wucaOltUjDlKKx7y820FAH1PrdRJtURQ&export=download'
+                href='https://drive.usercontent.google.com/uc?id=1QYKJjTZ5UqEIgzYvh_Ge17g-9iuJvRK_&authuser=0&export=download'
                 fontSize={{ base: "xs", sm: "sm", md: "md", lg: "md" }}
                 className="md_n_text"
                 w='150px'   
-                onClick={()=>window.open("https://drive.google.com/file/d/1wucaOltUjDlKKx7y820FAH1PrdRJtURQ/view?usp=sharing")}
+                onClick={()=>window.open("https://drive.google.com/file/d/1QYKJjTZ5UqEIgzYvh_Ge17g-9iuJvRK_/view?usp=drive_link")}
                 >
                 Resume 
                  <Box as="Button" p="1">

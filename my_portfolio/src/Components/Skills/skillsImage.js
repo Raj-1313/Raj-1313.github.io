@@ -12,6 +12,8 @@ import bootstrap from "../../img/skills/bootstrap.svg";
 import mongodb from "../../img/skills/mongoDB.svg";
 import git from "../../img/skills/git.svg";
 import canva from "../../img/skills/canva.svg";
+import docker from "../../img/skills/docker.svg";
+import quicksight from "../../img/skills/quicksight.svg";
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
@@ -20,38 +22,34 @@ export const skillsImage = (skill) => {
       return chakra;
     case "html":
       return html;
-
     case "css":
       return css;
     case "angular":
       return angular;
     case "javascript":
       return javascript;
-    
-
     case "react":
       return react;
     case "git":
       return git;
-
     case "typescript":
       return typescript;
-
     case "bootstrap":
       return bootstrap;
-      
     case "mongodb":
       return mongodb;
-
     case "redux":
       return redux;
     case "express":
       return express;
     case "nodejs":
       return nodejs;
-
     case "canva":
       return canva;
+    case "aws quicksight":
+      return quicksight;
+    case "docker":
+      return docker;
     default:
       break;
   }
