@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e8e56253.css",
-    "main.js": "/static/js/main.ca1cb383.js",
+    "main.js": "/static/js/main.942774d1.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Zoomcar.png": "/static/media/Zoomcar.c62797153791306bd3d4.png",
     "static/media/airgarage.png": "/static/media/airgarage.303aa1fc1174213a6162.png",
@@ -11,9 +11,11 @@
     "static/media/express.svg": "/static/media/express.75fff9be2f3b289ba7be1f43a08f7a4c.svg",
     "static/media/react.svg": "/static/media/react.c3a0b34aae466451a91157424eec1ee3.svg",
     "static/media/nodejs.svg": "/static/media/nodejs.e55572852ea7a91f785f9c3a2102771a.svg",
+    "static/media/quicksight.svg": "/static/media/quicksight.cc6cb2a8e726e872ca8c099edcb04272.svg",
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/typescript.svg": "/static/media/typescript.f66836b8961d019a6f633b3c89b0c2ad.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.3b3ab2cfe7cdf9d8eb417ce32f573b04.svg",
+    "static/media/docker.svg": "/static/media/docker.86a8cbca9bd4a44d54c34e8bacf3a516.svg",
     "static/media/canva.svg": "/static/media/canva.f1bf26dadc19202aa56adbff94b37de1.svg",
     "static/media/git.svg": "/static/media/git.2d7df16e58dae6c26bba033ee2e8c4d8.svg",
     "static/media/javascript.svg": "/static/media/javascript.f84ec7103324dc7e616d00ed43ecd531.svg",
@@ -23,11 +25,11 @@
     "static/media/angular.svg": "/static/media/angular.8f069a35aa20a88f85f5610e403bb8e8.svg",
     "static/media/chakra.svg": "/static/media/chakra.3cc0dcf33272ae6294329e6a24f995e9.svg",
     "main.e8e56253.css.map": "/static/css/main.e8e56253.css.map",
-    "main.ca1cb383.js.map": "/static/js/main.ca1cb383.js.map",
+    "main.942774d1.js.map": "/static/js/main.942774d1.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8e56253.css",
-    "static/js/main.ca1cb383.js"
+    "static/js/main.942774d1.js"
   ]
 }
